@@ -1,7 +1,8 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
 layout: default
+
 ---
-Hello
+## **Hi,   
+I’m Adam Gardefjord and this is my little website. It’s nice to see you here!**
+
+## Most people that come here are looking to learn a bit about some [projects I’ve worked on](all-my-projects/ "projects I’ve worked on") or to [read some of my writings](/things-I-ve-written/ "read some of my writings").
