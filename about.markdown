@@ -2,7 +2,7 @@
 layout: page
 title: A bit about me
 permalink: "/a-bit-about-me/"
-
+layout: default
 ---
 ## **A bit about me.**
 
