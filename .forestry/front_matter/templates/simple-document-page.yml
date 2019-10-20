@@ -12,3 +12,5 @@ fields:
   config:
     required: false
   label: Permalink
+pages:
+- all-my-projects.md
