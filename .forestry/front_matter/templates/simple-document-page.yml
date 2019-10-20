@@ -6,3 +6,13 @@ fields:
   name: text
   label: Text
   description: 'Just write all your text here. '
+- name: title
+  type: text
+  config:
+    required: false
+  label: Title
+- name: permalink
+  type: text
+  config:
+    required: false
+  label: Permalink
