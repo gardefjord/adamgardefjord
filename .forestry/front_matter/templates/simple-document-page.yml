@@ -13,4 +13,5 @@ fields:
     required: false
   label: Permalink
 pages:
+- things-i-ve-written.md
 - all-my-projects.md
