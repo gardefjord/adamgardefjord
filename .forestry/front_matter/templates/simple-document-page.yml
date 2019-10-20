@@ -2,10 +2,6 @@
 label: simple-document-page
 hide_body: false
 fields:
-- type: text
-  name: text
-  label: Text
-  description: 'Just write all your text here. '
 - name: title
   type: text
   config:
