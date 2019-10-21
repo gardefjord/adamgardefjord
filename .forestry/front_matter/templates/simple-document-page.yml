@@ -13,6 +13,6 @@ fields:
     required: false
   label: Permalink
 pages:
-- things-i-ve-written.md
 - all-my-projects.md
+- things-i-ve-written.md
 - ways-to-contact-me.md
