@@ -35,3 +35,5 @@ fields:
       path: 
   label: Type of post
   description: is this a project och writing?
+pages:
+- _posts/axfoundation.md
