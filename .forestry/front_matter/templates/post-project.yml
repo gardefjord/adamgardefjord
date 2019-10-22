@@ -5,7 +5,7 @@ fields:
 - name: title
   type: text
   config:
-    required: false
+    required: true
   label: Title
 - name: description
   type: textarea
@@ -20,3 +20,18 @@ fields:
   type: image_gallery
   config: {}
   label: Project Galleri
+- name: type_of_post
+  type: select
+  default: project
+  config:
+    required: true
+    options:
+    - project
+    - writings
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Type of post
+  description: is this a project och writing?
