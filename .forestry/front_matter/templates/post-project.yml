@@ -21,7 +21,7 @@ fields:
   type: image_gallery
   config: {}
   label: Project Galleri
-- name: type_of_post
+- name: categories
   type: select
   default: project
   config:
@@ -34,7 +34,7 @@ fields:
       section: 
       file: 
       path: 
-  label: Type of post
+  label: Categories
   description: is this a project och writing?
   hidden: true
 pages:
