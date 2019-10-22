@@ -1,7 +1,7 @@
 ---
 type_of_post: project
-title: Axfoundation
-description: ÖppnaDörren and Yrkesdörren 2016-today
+title: ÖppnaDörren and Yrkesdörren
+description: " UX, Service Design and Project Lead. Axfoundation 2016-today"
 project_galleri: []
 
 ---
