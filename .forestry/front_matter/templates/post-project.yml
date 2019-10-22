@@ -16,6 +16,7 @@ fields:
     schema:
       format: markdown
   label: Description
+  description: Add date and other relevant things
 - name: project_galleri
   type: image_gallery
   config: {}
@@ -35,5 +36,6 @@ fields:
       path: 
   label: Type of post
   description: is this a project och writing?
+  hidden: true
 pages:
 - _posts/axfoundation.md
