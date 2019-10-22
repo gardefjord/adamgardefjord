@@ -21,21 +21,10 @@ fields:
   type: image_gallery
   config: {}
   label: Project Galleri
-- name: categories
-  type: select
-  default: project
-  config:
-    required: true
-    options:
-    - project
-    - writings
-    source:
-      type: simple
-      section: 
-      file: 
-      path: 
-  label: Categories
-  description: is this a project och writing?
-  hidden: true
+- name: tags
+  type: tag_list
+  default: []
+  label: Tags
+  description: project or writtings
 pages:
 - _posts/2019-10-22-axfoundation.md
