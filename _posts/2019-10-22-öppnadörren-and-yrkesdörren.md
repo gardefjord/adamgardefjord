@@ -2,7 +2,7 @@
 type_of_post: project
 title: ÖppnaDörren and Yrkesdörren
 description: " UX, Service Design and Project Lead. Axfoundation 2016-today"
-project_galleri:
+project_gallery:
 - "/uploads/yrkesdorren-m-still.png"
 - "/uploads/oppnadorren-m-about-2.jpg"
 - "/uploads/oppna-dorren-ipad.jpg"

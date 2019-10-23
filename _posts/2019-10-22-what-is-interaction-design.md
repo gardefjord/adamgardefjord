@@ -3,7 +3,7 @@ tags:
 - writtings
 title: What is interaction design
 description: ''
-project_galleri: []
+project_gallery: []
 
 ---
 **What is interaction design?**  
