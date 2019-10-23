@@ -17,10 +17,10 @@ fields:
       format: markdown
   label: Description
   description: Add date and other relevant things
-- name: project_galleri
+- name: project_gallery
   type: image_gallery
   config: {}
-  label: Project Galleri
+  label: Project Gallery
 - name: tags
   type: tag_list
   default: []
