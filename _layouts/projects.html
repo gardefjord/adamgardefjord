@@ -14,7 +14,10 @@ layout: default
   </h2>
   <p>{{ post.description }}</p>
   {{ post.content }}
-  {{ post.project_galleri }}
+  
+    {% for project_galleri in post %}
+      <img src="{{ post.project_galleri }}" />
+    {% endfor %}
   {% endfor %}
   
   
