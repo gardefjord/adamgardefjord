@@ -2,9 +2,10 @@
 tags:
 - writtings
 title: What is interaction design
-description: ''
+description: I try to define Interaction Design and apparently, it is a conversation.
 project_gallery: []
 layout: post
+
 ---
 **What is interaction design?**  
 The design of a conversation between a person and an object.
