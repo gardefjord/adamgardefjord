@@ -7,18 +7,14 @@ layout: default
   {{ content }}
   
   {% for post in site.tags.project %}
-  <h2>
-    <a class="post-link" href="{{ post.url | relative_url }}">
-      {{ post.title | escape }}
-    </a>
-  </h2>
-  <p>{{ post.description }}</p>
-  {{ post.content }}
-  
-    {% for project_gallery in post %}
-      <img src="{{ post.project_gallery }}" />
-    {% endfor %}
+    <h2>
+      <a class="post-link" href="{{ post.url | relative_url }}">
+        {{ post.title | escape }}
+      </a>
+    </h2>
+    <p>{{ post.description }}</p>
   {% endfor %}
+
   
   
 </div>

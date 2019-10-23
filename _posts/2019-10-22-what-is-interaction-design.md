@@ -4,7 +4,7 @@ tags:
 title: What is interaction design
 description: ''
 project_gallery: []
-
+layout: post
 ---
 **What is interaction design?**  
 The design of a conversation between a person and an object.
