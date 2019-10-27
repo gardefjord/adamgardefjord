@@ -10,7 +10,6 @@ project_gallery:
 tags:
 - project
 layout: post
-date: 2016-today
 when_it_happened: 2015-Today
 
 ---
