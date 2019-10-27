@@ -1,9 +1,15 @@
 ---
-tags: []
+tags:
+- project
 layout: post
 title: Digital Ability — a visualisation project
-description: ''
-project_gallery: []
-when_it_happened: ''
+description: 'In 2012 Digitaliseringskommissionen was by Anna-Karin Hatt, the IT and
+  Energy minister of Sweden, assigned the task to reach the government''s goals and
+  ambitions within IT. '
+project_gallery:
+- "/uploads/1518608435-government-preview.jpg"
+- "/uploads/Screenshot 2019-10-27 at 15.48.31.png"
+- "/uploads/Screenshot 2019-10-27 at 15.48.13.png"
+when_it_happened: "2015"
 
 ---
