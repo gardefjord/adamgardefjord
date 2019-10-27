@@ -34,11 +34,12 @@ fields:
   description: Default is "post"
   hidden: true
   default: post
-- name: date
+- name: when_it_happened
   type: text
   config:
     required: false
-  label: Date
+  label: When it happened
+  description: Just write in text, dates.
 pages:
 - _posts/2019-10-22-öppnadörren-and-yrkesdörren.md
 - _posts/coupa-sourcing-optimization.md
