@@ -1,5 +1,6 @@
 ---
-tags: []
+tags:
+- project
 layout: post
 title: Coupa Sourcing Optimization
 description: I worked as a UX Designer, Service Designer, and Project Lead. Coupa
