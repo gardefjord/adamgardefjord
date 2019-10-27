@@ -1,7 +1,7 @@
 ---
 type_of_post: project
 title: ÖppnaDörren and Yrkesdörren
-description: " UX, Service Design and Project Lead. Axfoundation 2016-today"
+description: " UX, Service Design and Project Lead. "
 project_gallery:
 - "/uploads/yrkesdorren-m-still.png"
 - "/uploads/oppnadorren-m-about-2.jpg"
@@ -10,6 +10,7 @@ project_gallery:
 tags:
 - project
 layout: post
+date: 2016-today
 
 ---
 [Yrkesdörren](yrkesdörren.se) is an initiative from [Axfoundation](axfoundation.se), a non-profit business founded by Antonia Ax:son Johnson. Axdoundation aims to create the conditions for change towards a more sustainable society.
