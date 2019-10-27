@@ -11,6 +11,7 @@ tags:
 - project
 layout: post
 date: 2016-today
+when_it_happened: 2015-Today
 
 ---
 [Yrkesdörren](yrkesdörren.se) is an initiative from [Axfoundation](axfoundation.se), a non-profit business founded by Antonia Ax:son Johnson. Axdoundation aims to create the conditions for change towards a more sustainable society.
