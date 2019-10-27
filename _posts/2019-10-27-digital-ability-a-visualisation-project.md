@@ -21,3 +21,7 @@ The Project:
 * Generellt kring digitalt användande, snarare än digital kompetens.
 * Intervjuer med 16 personer - olika ålder/skeden i livet, kön, utbildning, familjeförhållanden.
 * Visualisering av information och insikter.
+
+The Swedish government is actively working towards strengthening our digital society and enable citizens to take an active part in the digital transformation. Ocean supported the advisory committee on digitization to gather insights on citizens’ digital competences, to inform and guide national strategies.
+
+Through in-depth interviews, our teams researched people's, motivations, behaviors, and attitudes towards digitization in their day-to-day life, and gathered our insights in an experience map. The visualization provides an accessible overview of digital competence in Sweden today and shows synergies between people’s ability, motivation, attitudes, and behaviors in different life situations. The map got published in the report Gör Sverige i framtiden, Delbetänkande av Digitaliseringskommissionen, 2015.
