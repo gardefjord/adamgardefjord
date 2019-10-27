@@ -13,3 +13,11 @@ project_gallery:
 when_it_happened: "2015"
 
 ---
+The Project:
+
+* Nulägesbild av digital kompetens i Sverige
+* Kompetens: Attityder, färdigheter, drivkrafter, självförtroende, motivation, upplevelse
+* Hur, när och varför man använder digitala tjänster och apparater. 
+* Generellt kring digitalt användande, snarare än digital kompetens.
+* Intervjuer med 16 personer - olika ålder/skeden i livet, kön, utbildning, familjeförhållanden.
+* Visualisering av information och insikter.
