@@ -11,6 +11,17 @@
   {%- endif -%}
   <script type="text/javascript">
     jQuery(document).ready(function($){
+      const $menu = $('.site-header');
+      $(document).mouseup(e => {
+        if (!$menu.is(e.target) // if the target of the click isn't the container...
+        && $menu.has(e.target).length === 0) // ... nor a descendant of the container
+        {
+          $menu.removeClass('site-header--open');
+          $('.menu-title').removeClass('menu-title--hide');
+          $('.page-content').removeClass('page-content--dim');
+          $('.page-content img').removeClass('hide');
+        }
+      });
       $('.header-drag').on('click',function() {
         console.log('clicked');
         $('.menu-title').toggleClass('menu-title--hide');
