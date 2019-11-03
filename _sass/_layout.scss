@@ -4,7 +4,7 @@
 
 .site-header {
   min-height: $spacing-unit * 1.865;
-  background: white;
+  background: $background-color;
   font-size: 24px;
   font-weight: 300;
   position: fixed;
@@ -99,10 +99,19 @@
   @include relative-font-size(2);
 }
 
+
+//Design of posts in a list
+.post {
+  margin-bottom: 48px;
+  p {
+    &:last-of-type{
+      margin-bottom: 8px;
+    }
+  }
+}
 .post-list-heading {
   @include relative-font-size(1.75);
 }
-
 .post-list {
   margin-left: 0;
   list-style: none;
@@ -111,21 +120,23 @@
     margin-bottom: $spacing-unit;
   }
 }
-
-.post-meta {
-  font-size: $small-font-size;
-  color: $grey-color;
-}
-
 .post-link {
-  display: block;
-  @include relative-font-size(1.5);
+  margin-bottom: 8px;
+  font-size: 20px;
 }
-
-
+.post-dates {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 300;
+  opacity: 0.3;
+}
+.post-read-more {
+  font-weight: 300;
+}
 
 /**
- * Posts
+ * Design a post
  */
 .post-header {
   margin-bottom: $spacing-unit;

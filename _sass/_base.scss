@@ -107,8 +107,10 @@ h2, h3 {
  */
 a {
   color: $brand-color;
-  text-decoration: underline;
-
+  border-bottom: 2px solid rgba($text-color, 0.1);
+  text-decoration: none;
+  transition: 0.5s;
+  padding-bottom: 1px;
   // &:visited {
   //   color: darken($brand-color, 25%);
   //   text-decoration: underline;
@@ -116,7 +118,7 @@ a {
 
   &:hover {
     color: $text-color;
-    text-decoration: underline;
+    border-bottom: 2px solid;
   }
 
   .social-media-list &:hover {

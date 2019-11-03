@@ -4,7 +4,7 @@ title: A bit about me
 permalink: "/a-bit-about-me/"
 layout: default
 ---
-## **A bit about me.**
+# **A bit about me.**
 
 ## I’m Adam Gardefjord. I work as an interaction designer at a little design studio called [Ocean](https://www.ocean.xyz "Ocean – an innovation and design agency").
 

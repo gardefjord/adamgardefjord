@@ -7,12 +7,15 @@ layout: default
   {{ content }}
   
   {% for post in site.tags.writtings %}
-  <h2>
-    <a class="post-link" href="{{ post.url | relative_url }}">
-      {{ post.title | escape }}
-    </a>
-  </h2>
-  <p>{{ post.description }}</p>
+    <div class="post">
+      <h2 class="post-link">
+        {{ post.title | escape }}
+      </h2>
+      <p>{{ post.description }}</p>
+      <div class="post-read-more">
+        <a href="{{ post.url | relative_url }}">Read more</a> ⇢
+      </div>
+    </div>
   {% endfor %}
   
   

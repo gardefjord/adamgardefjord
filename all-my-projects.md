@@ -4,4 +4,4 @@ permalink: "/all-my-projects/"
 layout: projects
 
 ---
-## All my projects
+# All my projects
