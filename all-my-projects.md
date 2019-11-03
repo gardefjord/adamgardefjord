@@ -1,7 +1,7 @@
 ---
 title: All my projects
 permalink: "/all-my-projects/"
-layout: projects
+layout: default
 
 ---
-# All my projects
+## All my projects
