@@ -41,6 +41,6 @@ fields:
   label: When it happened
   description: Just write in text, dates.
 pages:
+- _posts/2019-10-22-öppnadörren-and-yrkesdörren.md
 - _posts/2019-10-27-digital-ability-a-visualisation-project.md
 - _posts/2019-10-27-coupa-sourcing-optimization.md
-- _posts/2019-10-22-öppnadörren-and-yrkesdörren.md
