@@ -1,7 +1,7 @@
 ---
 type_of_post: project
 title: ÖppnaDörren and Yrkesdörren
-description: " UX Design, Service Design and Project Lead. "
+description: "UX Design, Service Design and Project Lead. "
 project_gallery:
 - "/uploads/yrkesdorren-m-still.png"
 - "/uploads/oppnadorren-m-about-2.jpg"
