@@ -3,7 +3,7 @@ tags:
 - project
 layout: post
 title: Digitaliseringskommissionen Digital Ability — a visualisation project
-description: ''
+description: I worked as a Service Designer.
 project_gallery:
 - "/uploads/1518608435-government-preview.jpg"
 - "/uploads/Screenshot 2019-10-27 at 15.48.31.png"

@@ -3,7 +3,7 @@ tags:
 - project
 layout: post
 title: Coupa Sourcing Optimization (pre. Trade Extensions)
-description: 'I worked as a UX Designer, Service Designer, and Project Lead. '
+description: 'I worked as a UX Designer, Service Designer, and Project Lead.'
 project_gallery:
 - "/uploads/1544208124-coupa-side-image-1-1.jpg"
 - "/uploads/1544453749-coupa-main-image-1-3-1.jpg"

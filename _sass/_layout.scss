@@ -122,9 +122,26 @@
     margin-bottom: $spacing-unit;
   }
 }
-.post-link {
+.post-headline {
   margin-bottom: 8px;
   font-size: 20px;
+  font-weight: 700;
+}
+.post-link {
+  display: block;
+  color: $brand-color;
+  border-bottom: none;
+  text-decoration: none;
+  transition: 0.5s;
+  padding-bottom: 1px;
+  &:hover {
+    color: $text-color;
+    border-bottom: none;
+    .post-read-more {
+      color: #ff8100;
+      border-bottom:2px solid #ff8100;
+    }
+  }
 }
 .post-dates {
   font-size: 16px;
@@ -134,7 +151,13 @@
   opacity: 0.3;
 }
 .post-read-more {
+  display: inline;
   font-weight: 300;
+  color: $brand-color;
+  border-bottom: 2px solid rgba($text-color, 0.1);
+  text-decoration: none;
+  transition: 0.5s;
+  padding-bottom: 1px;
 }
 
 /**
