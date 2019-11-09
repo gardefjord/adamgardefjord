@@ -23,7 +23,7 @@ email: adam.gardefjord@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
   Hi, I’m Adam Gardefjord and this is my little website. It’s nice to see you here!
   Most people that come here are looking to learn a bit about some projects I’ve worked on or to read some of my writings. 
-baseurl: "/adamgardefjord/" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gardefjord
 github_username:  gardefjord
