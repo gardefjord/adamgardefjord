@@ -9,7 +9,7 @@
   font-weight: 300;
   position: fixed;
   z-index: 1000;
-  bottom: -190px;
+  bottom: -242px;
   min-width: 100%;
   box-shadow: 0px -4px 16px rgba(0, 0, 0, 0.05), 0px -4px 8px rgba(0, 0, 0, 0.02);
   border-radius: 24px 24px 0px 0px;
@@ -47,7 +47,7 @@
   display: flex;
   flex-direction: column;
   align-items: stretch;
-  min-width: 100%;;
+  min-width: 100%;
   .page-link {
     padding: 0px 20px;
     font-weight: $base-font-weight;
@@ -107,11 +107,6 @@
 //Design of posts in a list
 .post {
   margin-bottom: 48px;
-  p {
-    &:last-of-type{
-      margin-bottom: 8px;
-    }
-  }
 }
 .post-list-heading {
   @include relative-font-size(1.75);
@@ -128,38 +123,33 @@
   margin-bottom: 8px;
   font-size: 20px;
   font-weight: 700;
+  line-height: 125%;
 }
-.post-link {
-  display: block;
-  color: $brand-color;
-  border-bottom: none;
-  text-decoration: none;
-  transition: 0.5s;
-  padding-bottom: 1px;
-  &:hover {
-    color: $text-color;
-    border-bottom: none;
-    .post-read-more {
-      color: #ff8100;
-      border-bottom:2px solid #ff8100;
-    }
-  }
+.post-description {
+  margin-bottom: 4px;
+  font-weight: 300;
 }
 .post-dates {
-  font-size: 16px;
-  display: block;
-  margin-bottom: 8px;
-  font-weight: 300;
-  opacity: 0.3;
+  font-size: 14px;
+  opacity: 0.5;
 }
 .post-read-more {
   display: inline;
   font-weight: 300;
   color: $brand-color;
-  border-bottom: 2px solid rgba($text-color, 0.1);
   text-decoration: none;
   transition: 0.5s;
   padding-bottom: 1px;
+}
+.post-link {
+  color: $brand-color;
+  text-decoration: none;
+  transition: 0.5s;
+  padding-bottom: 1px;
+  &:hover {
+    color: #ff8100;
+    border-bottom: 2px solid #ff8100;
+  }
 }
 
 /**

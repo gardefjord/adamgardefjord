@@ -8,17 +8,15 @@ layout: default
   
   {% for post in site.tags.project %}
     <div class="post">
-      <a class="post-link" href="{{ post.url | relative_url }}">
+      
         <h2 class="post-headline">
             {{ post.title | escape }}
         </h2>
-
-        <p>{{ post.description }}</p>
-
+        <p class="post-description">{{ post.description }}<br /><span class="post-dates">[{{ post.when_it_happened }}]</span></p>
         <div class="post-read-more">
-          Read more 
+          <a class="post-link" href="{{ post.url | relative_url }}">Read more</a> 
         </div>
-      </a>
+      
     </div>
     {% endfor %}
 
