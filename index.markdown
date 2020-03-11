@@ -3,7 +3,7 @@ layout: default
 
 ---
 
-# **Adam Gardefjord** — Service and UX Designer, now five years at [Ocean](https://www.ocean.xyz)
+# **Adam Gardefjord** — Service and UX Designer, now five years at [Ocean](https://www.ocean.xyz).
 
 Interaction/UX Designer with over +10 years working with digital products.
 
