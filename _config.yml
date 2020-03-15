@@ -20,9 +20,7 @@
 
 title: Adam Gardefjord
 email: adam.gardefjord@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-Adam Gardefjord — Interaction and UX Designer.
-Interaction and UX Designer with over 10 years working on digital products. 
+description: Interaction and UX Designer with over 10 years working on digital products. 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gardefjord
