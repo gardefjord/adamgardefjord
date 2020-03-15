@@ -2,15 +2,14 @@
 layout: default
 
 ---
+# ✎
+# Adam Gardefjord — Interaction and UX Designer.
 
-# **Adam Gardefjord** — Interaction and UX Designer.
-
-Interaction and UX Designer with over +10 years working with digital products.
+__Interaction and UX Designer with over 10 years working on digital products.__
 
 
 LinkedIn: [adamgardefjord](https://www.linkedin.com/in/gardefjord/)
 
-__Work__
 
 * _2014 – now_
 Service and UX Designer,
