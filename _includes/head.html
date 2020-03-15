@@ -6,32 +6,5 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   {%- feed_meta -%}
-  {%- if jekyll.environment == 'production' and site.google_analytics -%}
-    {%- include google-analytics.html -%}
-  {%- endif -%}
-  <script type="text/javascript">
-    jQuery(document).ready(function($){
-      const $menu = $('.site-header');
-      $(document).mouseup(e => {
-        if (!$menu.is(e.target) // if the target of the click isn't the container...
-        && $menu.has(e.target).length === 0) // ... nor a descendant of the container
-        {
-          $menu.removeClass('site-header--open');
-          $('.menu-title').removeClass('menu-title--hide');
-          $('.page-content').removeClass('page-content--dim');
-          $('.page-content img').removeClass('hide');
-        }
-      });
-      $('.header-drag').on('click',function() {
-        console.log('clicked');
-        $('.menu-title').toggleClass('menu-title--hide');
-        $('.site-header').toggleClass('site-header--open');
-        $('.page-content').toggleClass('page-content--dim');
-        $('.page-content img').toggleClass('hide');
-        return false;
-      });
-
-
-    });
-    </script>
+  {%- include google-analytics.html -%}
 </head>
