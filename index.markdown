@@ -20,7 +20,7 @@ Head of Interface & Interaction Design,
 [InternX](https://www.theinternx.com/), Stockholm and San Diego
 
 * _2010 – 2014_
-Digital Strategist and Technical Advisor, [Bonnier Books](https://www.bonnierbooks.com/), Stockholm
+Digital Strategist and Technical Advisor, [Bonnierförlagen](https://www.bonnierforlagen.se/), Stockholm
 
 * _2012_ 
 Researcher, [Bonnier Corporation](https://www.bonniercorp.com/), San Francisco
