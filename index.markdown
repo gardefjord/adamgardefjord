@@ -17,7 +17,7 @@ Service and UX Designer,
 
 * _2013 – 2014_
 Head of Interface & Interaction Design,
-[uLabs Ventures](https://www.linkedin.com/company/ulabs-ventures/about/), Stockholm
+[InternX](https://www.theinternx.com/), Stockholm and San Diego
 
 * _2010 – 2014_
 Digital Strategist and Technical Advisor, [Bonnier Books](https://www.bonnierbooks.com/), Stockholm
