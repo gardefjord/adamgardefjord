@@ -11,8 +11,11 @@ __A selection of clients I've worked with:__ Acando (CGI), Apica, Axfoundation, 
 
 LinkedIn: [adamgardefjord](https://www.linkedin.com/in/gardefjord/)
 
+* _2020 – now_
+UX Designer,
+[Elsa Science](https://www.elsa.science/), Stockholm
 
-* _2014 – now_
+* _2014 – 2020_
 Service and UX Designer,
 [Ocean](https://www.ocean.xyz), Stockholm
 
