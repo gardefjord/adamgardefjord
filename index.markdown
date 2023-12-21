@@ -5,7 +5,7 @@ layout: default
 # ✎
 # Adam Gardefjord — Interaction and UX Designer.
 
-__Interaction and UX Designer with over 10 years of working on digital products.__
+__Interaction and UX Designer with over 20 years of working on digital products.__
 
 __A selection of clients I've worked with:__ Acando (CGI), Apica, Axfoundation, Bonnierförlagen, Celgene, Coupa, Elsa Science, Zlatan Ibrahimovic, Ignitia, Jan Lööf, Klarna, Regeringskansliet, Sanofi, Jan Stenmark, Stock­holms Läns Land­st­ing, Stina Wirsén and many more...
 
