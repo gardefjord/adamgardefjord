@@ -17,7 +17,7 @@ UX Designer,
 
 * _2014 – 2020_
 Service and UX Designer,
-[Ocean](https://www.ocean.xyz), Stockholm
+Ocean Observations, Stockholm
 
 * _2013 – 2014_
 Head of Interface & Interaction Design,
