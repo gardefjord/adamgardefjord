@@ -1,3 +1,5 @@
+@use "sass:color";
+@use "sass:math";
 @charset "utf-8";
 
 // Define defaults for each variable.
@@ -15,8 +17,8 @@ $background-color: #ffb8b8 !default;
 $brand-color:      #00014E !default;
 
 $grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+// $grey-color-light: color.adjust($grey-color, $lightness: 40%) !default;
+// $grey-color-dark: color.adjust($grey-color, $lightness: -25%) !default;
 
 $table-text-align: left !default;
 
@@ -44,7 +46,7 @@ $on-laptop:        800px !default;
 }
 
 // Import partials.
-@import
+@use
   "base",
   "layout",
   "minima/syntax-highlighting"

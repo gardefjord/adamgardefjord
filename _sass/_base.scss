@@ -1,3 +1,5 @@
+@use "sass:color";
+@use "sass:math";
 /**
  * Reset some basic elements
  */
@@ -24,8 +26,8 @@ $background-color: #ffb8b8 !default;
 $brand-color:      #00014E !default;
 
 $grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+// $grey-color-light: color.scale($grey-color, $lightness: 40%) !default;
+// $grey-color-dark: color.scale($grey-color, $lightness: -25%) !default;
 
 $table-text-align: left !default;
 
@@ -65,7 +67,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: math.div($spacing-unit, 2);
 }
 
 /**
@@ -144,8 +146,8 @@ a {
   @include media-query($on-laptop) {
     max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
     max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+    padding-right: math.div($spacing-unit, 2);
+    padding-left: math.div($spacing-unit, 2);
   }
 }
 
