@@ -1,0 +1,16 @@
+---
+layout: default
+title: Home
+---
+
+<div class="portfolio-grid">
+  {% assign sorted_projects = site.projects | sort: "date" | reverse %}
+  {% for project in sorted_projects %}
+    <div class="portfolio-item">
+      <a href="{{ project.url | relative_url }}">
+        <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+        <h3>{{ project.title }}</h3>
+      </a>
+    </div>
+  {% endfor %}
+</div>

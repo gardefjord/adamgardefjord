@@ -1,25 +1,28 @@
-*---
+---
 layout: default
 ---
 
-<div class="home">
+<div class="project-detail">
+  {% if page.image %}
+    <img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+  {% endif %}
 
-  {{ content }}
-  
-  {% for post in site.tags.project %}
-    <div class="post">
-      
-        <h2 class="post-headline">
-            {{ post.title | escape }}
-        </h2>
-        <p class="post-description">{{ post.description }}<br /><span class="post-dates">[{{ post.when_it_happened }}]</span></p>
-        <div class="post-read-more">
-          <a class="post-link" href="{{ post.url | relative_url }}">Read more</a> 
-        </div>
-      
-    </div>
-    {% endfor %}
+  <h1 class="project-detail-title">{{ page.title }}</h1>
+  <p class="project-date">{{ page.date | date: "%B %d, %Y" }}</p>
+  <p class="project-description">{{ page.description }}</p>
 
-  
-  
+  {% if page.details %}
+    <h2>Details</h2>
+    <p>{{ page.details }}</p>
+  {% endif %}
+
+  {% if page.challenges %}
+    <h2>Challenges</h2>
+    <p>{{ page.challenges }}</p>
+  {% endif %}
+
+  {% if page.outcomes %}
+    <h2>Outcomes</h2>
+    <p>{{ page.outcomes }}</p>
+  {% endif %}
 </div>

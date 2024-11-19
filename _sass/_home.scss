@@ -1,0 +1,100 @@
+@use "sass:math";
+@use "sass:color";
+@use "base" as *; // Import base variables and mixins
+
+.site-header {
+  text-align: center;
+  background-color: $background-color;
+  color: $text-color;
+  padding: $spacing-unit;
+
+  .site-title {
+    font-size: math.div($base-font-size, 0.8); /* Scale */
+    color: $brand-color;
+  }
+
+  .site-subtitle {
+    font-size: math.div($base-font-size, 1.2);
+    color: $grey-color;
+  }
+}
+
+// Responsive grid layout
+@media (max-width: 768px) {
+  .portfolio-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .portfolio-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
+  gap: 30px; /* Increased gap between items */
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  overflow: visible; /* Ensure shadows are not cropped */
+
+  /* Adjust to 2 columns on medium screens */
+  @media (max-width: 768px) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px; /* Slightly reduced gap for smaller screens */
+  }
+
+  /* Adjust to 1 column on small screens */
+  @media (max-width: 480px) {
+    grid-template-columns: 1fr;
+    gap: 20px; /* Smaller gap for compact layout */
+  }
+}
+
+.portfolio-item {
+  position: relative; /* Ensure the item is positioned for better control */
+  text-align: center;
+  border-radius: 8px; /* Rounded corners for the entire item */
+  transition: transform 0.3s ease; /* Smooth scaling for the container */
+  cursor: pointer; /* Indicate interactivity */
+
+  &:hover {
+    transform: scale(1.01); /* Slightly scale the entire container */
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    border: none;
+    display: block; /* Make the link wrap the entire item */
+  }
+}
+
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
+  display: block; /* Ensures the image behaves as a block-level element */
+}
+
+.portfolio-item:hover img {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow appears only on the image */
+}
+
+.portfolio-item h3 {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  transition: transform 0.3s ease, color 0.3s ease; /* Smooth size and color transition */
+  color: #333;
+
+  /* Optional text hover effect */
+  &:hover {
+    color: #555; /* Slightly darker on hover */
+  }
+}
+

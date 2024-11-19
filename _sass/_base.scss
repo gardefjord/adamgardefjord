@@ -1,18 +1,7 @@
-@use "sass:color";
 @use "sass:math";
-/**
- * Reset some basic elements
- */
-body, h1, h2, h3, h4, h5, h6,
-p, blockquote, pre, hr,
-dl, dd, ol, ul, figure {
-  margin: 0;
-  padding: 0;
-}
-@charset "utf-8";
+@use "sass:color";
 
-// Define defaults for each variable.
-
+// Variables
 $base-font-family: Trebuchet, Arial, Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
 $base-font-size:   20px !default;
 $base-font-weight: 700 !default;
@@ -22,7 +11,7 @@ $base-line-height: 1.5 !default;
 $spacing-unit:     40px !default;
 
 $text-color:       #000275 !default;
-$background-color: #ffb8b8 !default;
+$background-color: #f2f5ee !default;
 $brand-color:      #00014E !default;
 
 $grey-color:       #828282 !default;
@@ -36,150 +25,95 @@ $content-width:    900px !default;
 
 $handheld:         400px !default;
 $on-laptop:        800px !default;
+/* Basic Reset */
+body, h1, h2, h3, h4, h5, h6,
+p, blockquote, pre, hr,
+dl, dd, ol, ul, figure {
+  margin: 0;
+  padding: 0;
+}
 
+@charset "utf-8";
 
-/**
- * Basic styling
- */
+// Ensure font sizes, spacings, and colors use variables
 body {
   font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
   color: $text-color;
   background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
-  font-kerning: normal;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
-  
-  @include media-query($handheld) {
-      font-size: 1em;
+  min-height: 100vh;
+}
+
+/* Headings */
+h1 {
+  font-size: math.div($base-font-size, 0.8); /* 25% larger */
+  font-weight: $base-font-weight;
+  color: $brand-color; /* Use brand color for main headings */
+}
+
+h2, h3 {
+  font-size: math.div($base-font-size, 0.9);
+  font-weight: 300;
+}
+
+h4, h5, h6 {
+  font-size: math.div($base-font-size, 1.2);
+}
+
+/* Links */
+a {
+  color: $text-color;
+  text-decoration: none;
+  border-bottom: 2px solid color.scale($text-color, $alpha: -50%); /* Subtle underline */
+  transition: color 0.3s, border-color 0.3s;
+
+  &:hover {
+    color: $brand-color;
+    border-bottom-color: $brand-color;
   }
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-  margin-bottom: math.div($spacing-unit, 2);
-}
-
-/**
- * `main` element
- */
+/* Layout & Spacing */
 main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
+  padding: math.div($spacing-unit, 2) $spacing-unit;
 }
 
-/**
- * Lists
- */
 ul, ol {
   margin-left: $spacing-unit;
 }
 
 li {
-  > ul,
-  > ol {
+  margin-bottom: math.div($spacing-unit, 4);
+
+  > ul, > ol {
     margin-bottom: 0;
   }
 }
 
-/**
- * Headings
- */
-h1 {
-  line-height: 1.1em;
-  font-size: 3em;
-}
-h1, h4, h5, h6 {
-  font-weight: $base-font-weight;
-}
-h2, h3 {
-  font-weight: 300;
-}
-
-/**
- * Links
- */
-a {
-  color: $text-color;
-  border-bottom: 2px solid rgba($text-color, 0.1);
-  text-decoration: none;
-  transition: 0.5s;
-  padding-bottom: 1px;
-
-  &:hover {
-    color: $text-color;
-    border-bottom: 2px solid;
-  }
-
-  .social-media-list &:hover {
-    text-decoration: none;
-
-    .username {
-      text-decoration: underline;
-    }
-  }
-}
-
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: math.div($spacing-unit, 2);
-    padding-left: math.div($spacing-unit, 2);
-  }
-}
-
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
+/* Icons */
 .svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
+  fill: $brand-color;
+  width: 16px;
+  height: 16px;
+  vertical-align: middle;
 }
 
-.social-media-list {
-  li + li {
-    padding-top: 5px;
+/* Media Queries */
+@mixin media-query($breakpoint) {
+  @media (max-width: #{$breakpoint}) {
+    @content;
   }
 }
 
+@include media-query($on-laptop) {
+  body {
+    font-size: math.div($base-font-size, 1.1);
+  }
+}
+
+@include media-query($handheld) {
+  h1 {
+    font-size: math.div($base-font-size, 0.9); /* Smaller on mobile */
+  }
+}

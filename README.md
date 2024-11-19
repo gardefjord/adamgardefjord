@@ -1,3 +1,3 @@
 # adamgardefjord
- Jekyll website about Adam Gardefjord. Also using Forestry to edit and publish. 
+ Jekyll website about Adam Gardefjord. 
  To run: bundle exec jekyll serve

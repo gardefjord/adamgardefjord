@@ -1,0 +1,66 @@
+@use "sass:math";
+@use "sass:color";
+@use "base" as *; // Import base variables and mixins
+/* Project Page Styles */
+
+.projects-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.project-item {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.project-item:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.project-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.project-title {
+  font-size: 1.5rem;
+  color: $text-color; // Reuse variables from base.scss
+  margin: 10px 0;
+}
+
+.project-date {
+  font-size: 0.9rem;
+  color: $grey-color;
+}
+
+.project-description {
+  font-size: 1rem;
+  color: $text-color;
+  margin: 15px 0;
+}
+
+.project-read-more .project-link {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: $brand-color;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.2s;
+}
+
+.project-read-more .project-link:hover {
+  background-color: color.adjust($brand-color, $lightness: -10%);
+}
+
