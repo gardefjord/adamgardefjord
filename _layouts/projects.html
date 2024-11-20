@@ -2,27 +2,51 @@
 layout: default
 ---
 
-<div class="project-detail">
-  {% if page.image %}
-    <img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
-  {% endif %}
+<div class="project-detail-container">
+  <article class="project-detail">
 
-  <h1 class="project-detail-title">{{ page.title }}</h1>
-  <p class="project-date">{{ page.date | date: "%B %d, %Y" }}</p>
-  <p class="project-description">{{ page.description }}</p>
+    <!-- Project Title and Date -->
+    <header class="project-header">
+      <h1 class="project-title">{{ page.title }}</h1>
+      <p class="project-date">{{ page.date | date: "%B %d, %Y" }}</p>
+    </header>
 
-  {% if page.details %}
-    <h2>Details</h2>
-    <p>{{ page.details }}</p>
-  {% endif %}
+    <!-- Description -->
+    <section class="project-intro">
+      <p class="project-description">{{ page.description }}</p>
+    </section>
 
-  {% if page.challenges %}
-    <h2>Challenges</h2>
-    <p>{{ page.challenges }}</p>
-  {% endif %}
+    <!-- Featured Image -->
+    {% if page.image %}
+      <figure class="project-image-container">
+        <img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+        <figcaption>Image showcasing the project: {{ page.title }}</figcaption>
+      </figure>
+    {% endif %}
 
-  {% if page.outcomes %}
-    <h2>Outcomes</h2>
-    <p>{{ page.outcomes }}</p>
-  {% endif %}
+    <!-- Details Section -->
+    {% if page.details %}
+      <section class="project-section">
+        <h2 class="project-subtitle">Details</h2>
+        <p class="project-text">{{ page.details }}</p>
+      </section>
+    {% endif %}
+
+    <!-- Challenges Section -->
+    {% if page.challenges %}
+      <section class="project-section">
+        <h2 class="project-subtitle">Challenges</h2>
+        <p class="project-text">{{ page.challenges }}</p>
+      </section>
+    {% endif %}
+
+    <!-- Outcomes Section -->
+    {% if page.outcomes %}
+      <section class="project-section">
+        <h2 class="project-subtitle">Outcomes</h2>
+        <p class="project-text">{{ page.outcomes }}</p>
+      </section>
+    {% endif %}
+
+  </article>
 </div>

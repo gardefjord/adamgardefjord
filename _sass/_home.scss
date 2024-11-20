@@ -1,6 +1,4 @@
-@use "sass:math";
-@use "sass:color";
-@use "base" as *; // Import base variables and mixins
+@use "base" as *;
 
 .site-header {
   text-align: center;
@@ -9,92 +7,55 @@
   padding: $spacing-unit;
 
   .site-title {
-    font-size: math.div($base-font-size, 0.8); /* Scale */
+    @extend .h1;
     color: $brand-color;
   }
 
   .site-subtitle {
-    font-size: math.div($base-font-size, 1.2);
+    @extend .h2;
     color: $grey-color;
-  }
-}
-
-// Responsive grid layout
-@media (max-width: 768px) {
-  .portfolio-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 480px) {
-  .portfolio-grid {
-    grid-template-columns: 1fr;
   }
 }
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr); /* Default to 3 columns */
-  gap: 30px; /* Increased gap between items */
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
   padding: 20px;
   max-width: 1200px;
   margin: 0 auto;
-  overflow: visible; /* Ensure shadows are not cropped */
 
-  /* Adjust to 2 columns on medium screens */
-  @media (max-width: 768px) {
+  @include media-query($on-laptop) {
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px; /* Slightly reduced gap for smaller screens */
   }
 
-  /* Adjust to 1 column on small screens */
-  @media (max-width: 480px) {
+  @include media-query($handheld) {
     grid-template-columns: 1fr;
-    gap: 20px; /* Smaller gap for compact layout */
   }
 }
 
 .portfolio-item {
-  position: relative; /* Ensure the item is positioned for better control */
   text-align: center;
-  border-radius: 8px; /* Rounded corners for the entire item */
-  transition: transform 0.3s ease; /* Smooth scaling for the container */
-  cursor: pointer; /* Indicate interactivity */
+  cursor: pointer;
 
   &:hover {
-    transform: scale(1.01); /* Slightly scale the entire container */
-    cursor: pointer;
+    color: $brand-color;
   }
 
   a {
     text-decoration: none;
-    color: inherit;
+    display: block;
     border: none;
-    display: block; /* Make the link wrap the entire item */
+  }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h3 {
+    @extend .h3;
+    color: $text-color;
+
   }
 }
-
-.portfolio-item img {
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  transition: box-shadow 0.3s ease; /* Smooth shadow transition */
-  display: block; /* Ensures the image behaves as a block-level element */
-}
-
-.portfolio-item:hover img {
-  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Shadow appears only on the image */
-}
-
-.portfolio-item h3 {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  transition: transform 0.3s ease, color 0.3s ease; /* Smooth size and color transition */
-  color: #333;
-
-  /* Optional text hover effect */
-  &:hover {
-    color: #555; /* Slightly darker on hover */
-  }
-}
-

@@ -1,31 +1,37 @@
-@use "sass:math";
 @use "sass:color";
-
 // Variables
-$base-font-family: Trebuchet, Arial, Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-size:   20px !default;
-$base-font-weight: 700 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
+$base-font-family: Trebuchet, Arial, Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$base-font-size: 20px;
+$base-font-weight: 700;
+$small-font-size: 16px;
+$base-line-height: 1.5;
 
-$spacing-unit:     40px !default;
+$spacing-unit: 40px;
 
-$text-color:       #000275 !default;
-$background-color: #f2f5ee !default;
-$brand-color:      #00014E !default;
+$text-color: #000275;
+$background-color: #f2f5ee;
+$brand-color: #00014E;
 
-$grey-color:       #828282 !default;
-// $grey-color-light: color.scale($grey-color, $lightness: 40%) !default;
-// $grey-color-dark: color.scale($grey-color, $lightness: -25%) !default;
+$grey-color: #828282;
 
-$table-text-align: left !default;
+$handheld: 400px;
+$on-laptop: 800px;
 
-// Width of the content area
-$content-width:    900px !default;
+// Font size variables
+$font-size-display: 36px;
+$font-size-h1: 28px;
+$font-size-h2: 24px;
+$font-size-h3: 20px;
+$font-size-h4: 18px;
+$font-size-h5: 16px;
+$font-size-body-large: 18px;
+$font-size-body-regular: $base-font-size;
+$font-size-body-small: $small-font-size;
+$font-size-caption: 14px;
+$font-size-overline: 12px;
+$font-size-footnote: 10px;
 
-$handheld:         400px !default;
-$on-laptop:        800px !default;
-/* Basic Reset */
+// Reset styles
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
@@ -33,11 +39,9 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-@charset "utf-8";
-
-// Ensure font sizes, spacings, and colors use variables
+// Typography
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font: #{$base-font-weight} calc(#{$base-font-size} / #{$base-line-height}) #{$base-font-family};
   color: $text-color;
   background-color: $background-color;
   display: flex;
@@ -45,27 +49,83 @@ body {
   min-height: 100vh;
 }
 
-/* Headings */
-h1 {
-  font-size: math.div($base-font-size, 0.8); /* 25% larger */
+// Reusable typography classes
+.display {
+  font-size: $font-size-display;
   font-weight: $base-font-weight;
-  color: $brand-color; /* Use brand color for main headings */
+  line-height: 1.3;
+  color: $brand-color;
 }
 
-h2, h3 {
-  font-size: math.div($base-font-size, 0.9);
+.h1 {
+  font-size: $font-size-h1;
+  font-weight: $base-font-weight;
+  color: $brand-color;
+}
+
+.h2 {
+  font-size: $font-size-h2;
+  font-weight: 500;
+  color: $text-color;
+}
+
+.h3 {
+  font-size: $font-size-h3;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.h4 {
+  font-size: $font-size-h4;
+  font-weight: 400;
+  color: $text-color;
+}
+
+.h5 {
+  font-size: $font-size-h5;
   font-weight: 300;
+  color: $grey-color;
 }
 
-h4, h5, h6 {
-  font-size: math.div($base-font-size, 1.2);
+.body-large {
+  font-size: $font-size-body-large;
+  font-weight: 400;
 }
 
-/* Links */
+.body-regular {
+  font-size: $font-size-body-regular;
+  font-weight: 400;
+}
+
+.body-small {
+  font-size: $font-size-body-small;
+  font-weight: 400;
+}
+
+.caption {
+  font-size: $font-size-caption;
+  font-weight: 300;
+  color: $grey-color;
+}
+
+.overline {
+  font-size: $font-size-overline;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $grey-color;
+}
+
+.footnote {
+  font-size: $font-size-footnote;
+  font-weight: 300;
+  color: $grey-color;
+}
+
+// Links
 a {
   color: $text-color;
   text-decoration: none;
-  border-bottom: 2px solid color.scale($text-color, $alpha: -50%); /* Subtle underline */
+  border-bottom: 2px solid color.scale($text-color, $alpha: -50%);
   transition: color 0.3s, border-color 0.3s;
 
   &:hover {
@@ -74,46 +134,9 @@ a {
   }
 }
 
-/* Layout & Spacing */
-main {
-  padding: math.div($spacing-unit, 2) $spacing-unit;
-}
-
-ul, ol {
-  margin-left: $spacing-unit;
-}
-
-li {
-  margin-bottom: math.div($spacing-unit, 4);
-
-  > ul, > ol {
-    margin-bottom: 0;
-  }
-}
-
-/* Icons */
-.svg-icon {
-  fill: $brand-color;
-  width: 16px;
-  height: 16px;
-  vertical-align: middle;
-}
-
-/* Media Queries */
+// Media query mixin
 @mixin media-query($breakpoint) {
   @media (max-width: #{$breakpoint}) {
     @content;
-  }
-}
-
-@include media-query($on-laptop) {
-  body {
-    font-size: math.div($base-font-size, 1.1);
-  }
-}
-
-@include media-query($handheld) {
-  h1 {
-    font-size: math.div($base-font-size, 0.9); /* Smaller on mobile */
   }
 }

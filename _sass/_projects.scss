@@ -1,66 +1,69 @@
-@use "sass:math";
-@use "sass:color";
-@use "base" as *; // Import base variables and mixins
-/* Project Page Styles */
+@use "base" as *;
 
-.projects-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  gap: 20px;
-  padding: 20px;
+.project-detail {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: $spacing-unit;
+
+  /* Hero Section */
+  .project-hero {
+    margin-bottom: $spacing-unit * 2;
+
+    &-image-container {
+      margin-bottom: $spacing-unit;
+      img {
+        width: 100%;
+      }
+    }
+
+    &-content {
+      text-align: center;
+
+      h1 {
+        @extend .h1;
+        margin-bottom: calc(#{$spacing-unit} / 2);
+        color: $brand-color;
+      }
+
+      .project-description {
+        @extend .body-regular;
+        margin: 0 auto;
+        max-width: 600px;
+        color: $text-color;
+      }
+    }
+  }
+
+  /* Project Content */
+  .project-content {
+    margin-top: $spacing-unit * 2;
+    line-height: $base-line-height;
+
+    h2 {
+      @extend .h2;
+      color: $brand-color;
+      margin-bottom: calc(#{$spacing-unit} / 2);
+    }
+
+    p {
+      @extend .body-regular;
+      margin-bottom: $spacing-unit;
+    }
+
+    ul, ol {
+      margin-left: $spacing-unit;
+      list-style-position: inside;
+      list-style-type: disc;
+
+      li {
+        margin-bottom: calc(#{$spacing-unit} / 2);
+      }
+    }
+
+    img {
+      display: block;
+      margin: $spacing-unit auto;
+      max-width: 100%;
+    }
+  }
 }
-
-.project-item {
-  border: 1px solid #ccc;
-  border-radius: 8px;
-  padding: 20px;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s, box-shadow 0.2s;
-}
-
-.project-item:hover {
-  transform: scale(1.03);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-}
-
-.project-image {
-  max-width: 100%;
-  height: auto;
-  border-radius: 8px;
-  margin-bottom: 15px;
-}
-
-.project-title {
-  font-size: 1.5rem;
-  color: $text-color; // Reuse variables from base.scss
-  margin: 10px 0;
-}
-
-.project-date {
-  font-size: 0.9rem;
-  color: $grey-color;
-}
-
-.project-description {
-  font-size: 1rem;
-  color: $text-color;
-  margin: 15px 0;
-}
-
-.project-read-more .project-link {
-  display: inline-block;
-  margin-top: 10px;
-  padding: 10px 20px;
-  background-color: $brand-color;
-  color: #fff;
-  text-decoration: none;
-  border-radius: 5px;
-  transition: background-color 0.2s;
-}
-
-.project-read-more .project-link:hover {
-  background-color: color.adjust($brand-color, $lightness: -10%);
-}
-
