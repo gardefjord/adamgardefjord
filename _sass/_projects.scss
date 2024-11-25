@@ -1,7 +1,7 @@
 @use "base" as *;
 
 .project-detail {
-  max-width: 800px;
+  max-width: $max-width;
   margin: 0 auto;
   padding: $spacing-unit;
 
@@ -9,24 +9,25 @@
   .project-hero {
     margin-bottom: $spacing-unit * 2;
 
-    &-image-container {
+    .project-hero-image-container {
       margin-bottom: $spacing-unit;
+
       img {
         width: 100%;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
     }
 
-    &-content {
+    .project-hero-content {
       text-align: center;
 
       h1 {
-        @extend .h1;
         margin-bottom: calc(#{$spacing-unit} / 2);
-        color: $brand-color;
+        color: $brand-color; /* No need to redefine font-family/size */
       }
 
       .project-description {
-        @extend .body-regular;
         margin: 0 auto;
         max-width: 600px;
         color: $text-color;
@@ -37,17 +38,10 @@
   /* Project Content */
   .project-content {
     margin-top: $spacing-unit * 2;
-    line-height: $base-line-height;
 
     h2 {
-      @extend .h2;
-      color: $brand-color;
+      color: $brand-color; /* Specific to project content */
       margin-bottom: calc(#{$spacing-unit} / 2);
-    }
-
-    p {
-      @extend .body-regular;
-      margin-bottom: $spacing-unit;
     }
 
     ul, ol {
@@ -64,6 +58,33 @@
       display: block;
       margin: $spacing-unit auto;
       max-width: 100%;
+      border-radius: 8px;
+    }
+  }
+
+  /* Call-to-Action Section */
+  .project-call-to-action {
+    text-align: center;
+    margin-top: $spacing-unit * 2;
+    padding: calc(#{$spacing-unit} / 2) $spacing-unit;
+    background-color: $background-color;
+    border: 1px solid $grey-color;
+    border-radius: 8px;
+
+    p {
+      margin: 0;
+      color: $text-color;
+
+      a {
+        color: $brand-color;
+        font-weight: $font-weight-bold;
+        text-decoration: underline;
+        transition: color 0.3s;
+
+        &:hover {
+          color: darken($brand-color, 10%);
+        }
+      }
     }
   }
 }

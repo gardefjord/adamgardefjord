@@ -1,0 +1,49 @@
+@use "base" as *;
+
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(#{$spacing-unit} / 2) $spacing-unit;
+  background-color: $background-color;
+  border-bottom: 1px solid $grey-color;
+  
+  .main-header-left {
+    .brand-name {
+      font-family: $font-header;
+      font-size: $font-size-h2;
+      font-weight: $font-weight-bold;
+      color: $brand-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .main-header-right {
+    .nav-list {
+      list-style: none;
+      display: flex;
+      gap: $spacing-unit;
+      margin: 0;
+      padding: 0;
+
+      li {
+        a {
+          font-family: $font-header;
+          font-size: $font-size-h4;
+          font-weight: $font-weight-normal;
+          color: $text-color;
+          text-decoration: none;
+          transition: color 0.3s;
+
+          &:hover {
+            color: $brand-color;
+          }
+        }
+      }
+    }
+  }
+}

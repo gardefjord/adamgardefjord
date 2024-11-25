@@ -7,23 +7,23 @@
   padding: $spacing-unit;
 
   .site-title {
-    @extend .h1;
-    color: $brand-color;
+    color: $brand-color; /* Global typography styles apply */
+    margin-bottom: calc(#{$spacing-unit} / 2);
   }
 
   .site-subtitle {
-    @extend .h2;
-    color: $grey-color;
+    color: $grey-color; /* Global typography styles apply */
+    margin-top: calc(#{$spacing-unit} / 4);
   }
 }
 
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
-  padding: 20px;
-  max-width: 1200px;
+  gap: $spacing-unit*2;
+  padding: calc(#{$spacing-unit} / 2);
   margin: 0 auto;
+  max-width: $max-width;
 
   @include media-query($on-laptop) {
     grid-template-columns: repeat(2, 1fr);
@@ -38,10 +38,6 @@
   text-align: center;
   cursor: pointer;
 
-  &:hover {
-    color: $brand-color;
-  }
-
   a {
     text-decoration: none;
     display: block;
@@ -51,11 +47,11 @@
   img {
     width: 100%;
     height: auto;
+
   }
 
   h3 {
-    @extend .h3;
-    color: $text-color;
-
+    color: $text-color; /* Inherits from global styles */
+    text-align: left;
   }
 }
