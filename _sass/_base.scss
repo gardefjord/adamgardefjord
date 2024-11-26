@@ -89,15 +89,8 @@ p {
 
 // Links
 a {
-  color: $text-color;
   text-decoration: none;
-  border-bottom: 2px solid color.scale($text-color, $alpha: -50%);
   transition: color 0.3s, border-color 0.3s;
-
-  &:hover {
-    color: $brand-color;
-    border-bottom-color: $brand-color;
-  }
 }
 
 // Media query mixin
@@ -105,4 +98,16 @@ a {
   @media (max-width: #{$breakpoint}) {
     @content;
   }
+}
+
+.page-content {
+  max-width: $max-width;
+  margin: 0 auto; /* Centers the content */
+  padding: calc(#{$spacing-unit} / 2); /* Adjust padding for consistent spacing */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  width: 100%; /* Ensures content doesn't exceed the viewport width */
+
+  // @include media-query($handheld) {
+  //   padding: $spacing-unit; /* Add more padding on smaller screens for readability */
+  // }
 }

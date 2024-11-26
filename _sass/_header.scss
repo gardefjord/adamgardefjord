@@ -2,38 +2,45 @@
 
 .main-header {
   display: flex;
+  flex-wrap: nowrap; /* Prevents wrapping */
   justify-content: space-between;
   align-items: center;
-  padding: calc(#{$spacing-unit} / 2) $spacing-unit;
+  width: 100%; /* Ensure the header spans the full width */
+  max-width: $max-width;
+  margin: 0 auto;
+  padding: calc(#{$spacing-unit}*2) calc(#{$spacing-unit} / 2);
   background-color: $background-color;
-  border-bottom: 1px solid $grey-color;
-  
+  box-sizing: border-box; /* Ensure padding is included in width */
+
   .main-header-left {
+    flex: 1; /* Pushes this to the far left */
+    text-align: left;
+
     .brand-name {
       font-family: $font-header;
       font-size: $font-size-h2;
       font-weight: $font-weight-bold;
       color: $brand-color;
       text-decoration: none;
-
-      &:hover {
-        text-decoration: underline;
-      }
     }
   }
 
   .main-header-right {
+    flex: 1; /* Pushes this to the far right */
+    text-align: right;
+
     .nav-list {
       list-style: none;
       display: flex;
-      gap: $spacing-unit;
+      justify-content: flex-end; /* Aligns the menu items to the right */
+      gap: calc(#{$spacing-unit} / 2); /* Adds spacing between menu items */
       margin: 0;
       padding: 0;
 
       li {
         a {
           font-family: $font-header;
-          font-size: $font-size-h4;
+          font-size: $font-size-h2;
           font-weight: $font-weight-normal;
           color: $text-color;
           text-decoration: none;
@@ -42,8 +49,37 @@
           &:hover {
             color: $brand-color;
           }
+          &.active {
+            text-decoration: underline; /* Optional for emphasis */
+          }
         }
       }
     }
+  }
+}
+
+/* Responsive Styles for Smaller Screens */
+@include media-query($handheld) {
+  .main-header {
+    flex-direction: column; /* Stack brand and menu vertically on small screens */
+    align-items: center; /* Center items */
+    text-align: center;
+    padding: $spacing-unit;
+
+    .main-header-left {
+      text-align: center;
+    }
+    .main-header-right {
+      margin-top: $spacing-unit;
+
+      .nav-list {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center;
+        gap: calc(#{$spacing-unit} / 4);
+      }
+    }
+  }
+  .main-header .nav-list a.active {
+    text-decoration: underline;
   }
 }

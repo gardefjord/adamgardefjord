@@ -1,22 +1,5 @@
 @use "base" as *;
 
-.site-header {
-  text-align: center;
-  background-color: $background-color;
-  color: $text-color;
-  padding: $spacing-unit;
-
-  .site-title {
-    color: $brand-color; /* Global typography styles apply */
-    margin-bottom: calc(#{$spacing-unit} / 2);
-  }
-
-  .site-subtitle {
-    color: $grey-color; /* Global typography styles apply */
-    margin-top: calc(#{$spacing-unit} / 4);
-  }
-}
-
 .portfolio-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -25,12 +8,23 @@
   margin: 0 auto;
   max-width: $max-width;
 
+  @include media-query(1200px) { 
+    gap: $spacing-unit * 1.5; /* Smaller gap for medium-large screens */
+  }
+
   @include media-query($on-laptop) {
     grid-template-columns: repeat(2, 1fr);
+    gap: $spacing-unit; /* Reduce gap for laptop screens */
+  }
+
+  @include media-query(600px) {
+    grid-template-columns: 1fr;
+    row-gap: calc(#{$spacing-unit}); /* Larger distance between rows */
+    column-gap: calc(#{$spacing-unit} / 2); /* Smaller distance between columns */
   }
 
   @include media-query($handheld) {
-    grid-template-columns: 1fr;
+    row-gap: calc(#{$spacing-unit}); /* Minimal gap for very small screens */
   }
 }
 
