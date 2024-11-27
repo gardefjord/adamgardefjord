@@ -7,7 +7,7 @@ layout: default
   <section class="project-hero">
     {% if page.image %}
     <div class="project-hero-image-container">
-      <img src="{{ page.image | relative_url }}" alt="{{ page.title | escape }} - Project Image">
+      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title | escape }} - Project Image">
     </div>
     {% endif %}
     <div class="project-hero-content">
@@ -20,5 +20,5 @@ layout: default
   <section class="project-content">
     {{ content }}
   </section>
-  
+
 </main>

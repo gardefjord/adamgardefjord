@@ -103,7 +103,7 @@ a {
 .page-content {
   max-width: $max-width;
   margin: 0 auto; /* Centers the content */
-  padding: calc(#{$spacing-unit} / 2); /* Adjust padding for consistent spacing */
+  padding: 0 calc(#{$spacing-unit} / 2) $spacing-unit*8 calc(#{$spacing-unit} / 2); /* Adjust padding for consistent spacing */
   box-sizing: border-box; /* Includes padding in width calculation */
   width: 100%; /* Ensures content doesn't exceed the viewport width */
 

@@ -1,9 +1,49 @@
 @use "base" as *;
 
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Narrow first column for headlines, wider second column for content */
+  gap: $spacing-unit; /* Adjust spacing between rows */
+
+  .grid-headline {
+    font-family: $font-header;
+    font-size: $font-size-h4;
+    color: $brand-color;
+    text-align: left; /* Align text to the right */
+    padding-right: calc(#{$spacing-unit} / 2); /* Adds spacing between the headline and content */
+  }
+
+  .grid-content {
+    font-family: $font-body;
+    font-size: $font-size-body-regular;
+    font-weight: $font-weight-normal;
+    line-height: $base-line-height;
+    color: $text-color;
+  }
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr 2fr; /* Adjust proportions for smaller screens */
+  }
+
+  @include media-query($handheld) {
+    grid-template-columns: 1fr; /* Stack items in a single column on very small screens */
+    row-gap: 0; /* Adjust spacing between rows */
+    column-gap: $spacing-unit; /* Adjust spacing between rows */
+
+    .grid-headline {
+      text-align: left; /* Align headlines to the left on small screens */
+      padding-right: 0; /* Remove padding */
+      margin-bottom: calc(#{$spacing-unit} / 8); /* Add spacing below headline */
+    }
+    .grid-content {
+      margin-bottom: $spacing-unit; /* Add spacing below headline */
+    }
+  }
+}
+
 .project-detail {
   max-width: $max-width;
   margin: 0 auto;
-  padding: $spacing-unit;
 
   /* Hero Section */
   .project-hero {
@@ -14,56 +54,48 @@
 
       img {
         width: 100%;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       }
     }
 
     .project-hero-content {
-      text-align: center;
+      max-width: 700px;
 
       h1 {
         margin-bottom: calc(#{$spacing-unit} / 2);
-        color: $brand-color; /* No need to redefine font-family/size */
       }
 
       .project-description {
-        margin: 0 auto;
-        max-width: 600px;
-        color: $text-color;
+        padding-left: 6px;
+        border-left: 3px solid $brand-color;
       }
     }
   }
   /* Project Content */
   .project-content {
-    margin-top: $spacing-unit * 2;
+    max-width: 700px;
     
     .project-subtitle {
       padding-left: 6px;
       border-left: 3px solid $brand-color;
     }
 
-    h2 {
-      color: $brand-color; /* Specific to project content */
-      margin-bottom: calc(#{$spacing-unit} / 2);
-    }
-
-    ul, ol {
-      margin-left: $spacing-unit;
-      list-style-position: inside;
-      list-style-type: disc;
-
-      li {
-        margin-bottom: calc(#{$spacing-unit} / 2);
-      }
-    }
-
-    img {
-      display: block;
-      margin: $spacing-unit auto;
-      max-width: 100%;
-      border-radius: 8px;
-    }
   }
 
+}
+.project-image {
+  text-align: left;
+  margin: $spacing-unit*2 auto; /* Centered with spacing */
+  max-width: $max-width;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: calc(#{$spacing-unit} / 4); /* Space between image and caption */
+
+  }
+
+  figcaption {
+    font-family: $font-body;
+    font-size: $font-size-body-small;
+  }
 }
