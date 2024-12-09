@@ -21,6 +21,11 @@
     color: $text-color;
   }
 
+  a {
+    color: $link-color;
+
+  }
+
   @include media-query($on-laptop) {
     grid-template-columns: 1fr 2fr; /* Adjust proportions for smaller screens */
   }
@@ -94,8 +99,21 @@
 
   }
 
-  figcaption {
-    font-family: $font-body;
-    font-size: $font-size-body-small;
+}
+
+.project-video {
+  text-align: left;
+  margin: $spacing-unit*2 auto; /* Centered with spacing */
+  max-width: $max-width;
+
+  video {
+    width: 100%;
+    height: auto;
+    margin-top: calc(#{$spacing-unit} / 4); /* Space between image and caption */
   }
+}
+
+figcaption {
+  font-family: $font-body;
+  font-size: $font-size-body-small;
 }

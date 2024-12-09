@@ -1,6 +1,6 @@
 ---
 layout: project-detail
-title: bfree – Making Accounting Simple
+title: Making Accounting Simple
 image: /assets/images/bfree/bfree.png
 hero_image: /assets/images//bfree/bfree-hero.png
 date: 2015-01-01

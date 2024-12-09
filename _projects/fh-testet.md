@@ -1,7 +1,7 @@
 ---
 layout: project-detail
 title: Familial hypercholesterolemia?
-image: /assets/images/fh-testet-sanofi/sanofi.jpg
+image: /assets/images/fh-testet-sanofi/fh-testet.png
 hero_image: /assets/images/fh-testet-sanofi/sanofi-hero.jpg
 date: 2016-01-01
 description: >
