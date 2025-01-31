@@ -1,6 +1,7 @@
 ---
 layout: project-detail
-title: ÖppnaDörren
+title: DRAFT ÖppnaDörren
+company: Axfoundation
 image: /assets/images/oppnadorren/oppnadorren.gif
 hero_image: /assets/images/oppnadorren/oppna-dorren-ipad.jpg
 date: 2013-12-01

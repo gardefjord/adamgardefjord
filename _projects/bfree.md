@@ -1,6 +1,7 @@
 ---
 layout: project-detail
 title: Making Accounting Simple
+company: bfree
 image: /assets/images/bfree/bfree.png
 hero_image: /assets/images//bfree/bfree-hero.png
 date: 2015-01-01
@@ -18,7 +19,7 @@ permalink: /projects/bfree/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We began by delving into accounting basics through desktop research and client resources, analyzing competitors to identify opportunities for simplicity. Collaborative workshops with the client defined user needs and streamlined workflows. We then designed and iterated interactive wireframes, testing them with real users to refine usability and functionality. To complete the project, we developed a cohesive visual language and component library that supported the concept’s approachable identity.
+    We began by delving into accounting basics through desktop research and client resources, analyzing competitors to identify opportunities for simplicity. Collaborative workshops with the client defined user needs and streamlined workflows. We then designed and iterated interactive wireframes, testing them with real users to refine usability and functionality. To complete the project, we developed a cohesive visual language and component library that supported the concept's approachable identity.
   </div>
 
   <div class="grid-headline">Outcomes</div>

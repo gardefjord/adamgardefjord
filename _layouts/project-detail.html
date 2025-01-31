@@ -5,9 +5,15 @@ layout: default
 <main class="project-detail">
   <!-- Hero Section -->
   <section class="project-hero">
-    {% if page.image %}
-    <div class="project-hero-image-container">
-      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title | escape }} - Project Image">
+    {% if page.hero_video %}
+    <div class="hero-video">
+      <video autoplay loop muted playsinline>
+        <source src="{{ page.hero_video | relative_url }}" type="video/mp4">
+      </video>
+    </div>
+    {% else %}
+    <div class="hero-image">
+      <img src="{{ page.hero_image | relative_url }}" alt="{{ page.title }}">
     </div>
     {% endif %}
     <div class="project-hero-content">

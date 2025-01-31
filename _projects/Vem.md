@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Vem? – Stina Wirsén
+company: Bonnier Carlsén
 image: /assets/images/bfree.png
 date: 2013-01-01
 description: "A project mapping the digital competencies of Swedes and providing key insights into digital literacy across various demographics."

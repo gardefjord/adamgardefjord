@@ -54,27 +54,40 @@
   .project-hero {
     margin-bottom: $spacing-unit * 2;
 
-    .project-hero-image-container {
+    .hero-video,
+    .hero-image {
+      width: 100%;
       margin-bottom: $spacing-unit;
-
+      
+      video,
       img {
         width: 100%;
+        height: auto;
+        display: block;
       }
     }
 
     .project-hero-content {
       max-width: 700px;
-
+      color: $text-color;  // Using the base text color
+      
       h1 {
         margin-bottom: calc(#{$spacing-unit} / 2);
       }
-
+      
       .project-description {
         padding-left: 6px;
         border-left: 3px solid $brand-color;
       }
     }
   }
+
+  @media (max-width: 768px) {
+    .project-hero {
+      height: 50vh;
+    }
+  }
+
   /* Project Content */
   .project-content {
     max-width: 700px;
@@ -116,4 +129,27 @@
 figcaption {
   font-family: $font-body;
   font-size: $font-size-body-small;
+}
+
+.project-list {
+  margin: $spacing-unit/4 0;
+  padding-left: $spacing-unit/6;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: calc(#{$spacing-unit} / 4);
+    padding-left: $spacing-unit/3;
+    
+    &:before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 3px;
+      color: $brand-color;
+      font-size: 1.2em;
+      line-height: 1;
+    }
+  }
+
 }

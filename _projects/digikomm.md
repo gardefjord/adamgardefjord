@@ -1,34 +1,35 @@
 ---
 layout: project-detail
-title: Swedes digital competencies mapped
+title: Mapping Sweden's Digital Landscape
+company: Digitaliseringskommissionen
 image: /assets/images/digikomm/digikomm.png
-hero_image: /assets/images/digikomm/digikomm.png
+hero_image: /assets/images/digikomm/digikomm-hero.png
 date: 2014-01-01
 description: >
-  Designed an intuitive cloud-based accounting concept to make bookkeeping
-  accessible for everyone.
-permalink: /projects/swedes-digital-competencies/
+  Led research initiatives to map digital competencies across Sweden, providing
+  crucial insights for policy and education planning.
+permalink: /projects/digikomm/
 ---
 
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Accounting can be intimidating for non-experts. bfree aimed to create a simple, cloud-based solution that anyone could use.
+    Sweden needed a comprehensive understanding of digital competencies across different demographics to inform policy decisions and educational initiatives. There was no clear picture of the digital skills landscape.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We began by delving into accounting basics through desktop research and client resources, analyzing competitors to identify opportunities for simplicity. Collaborative workshops with the client defined user needs and streamlined workflows. We then designed and iterated interactive wireframes, testing them with real users to refine usability and functionality. To complete the project, we developed a cohesive visual language and component library that supported the concept’s approachable identity.
+    Through a combination of research methods and collaborative workshops, we gathered and analyzed data about digital competencies across various Swedish demographics. This involved working closely with digital literacy experts and stakeholders from different sectors.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The project delivered a tested concept, functional specifications, and a visual identity, enabling the client to pitch the idea and secure funding. Today, the bfree service is live, built on the foundation we provided.
+    The project delivered valuable insights that enabled informed decision-making about digital literacy initiatives. Our findings helped identify gaps in digital competencies and provided a roadmap for future educational and policy initiatives.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Early discussions about technical feasibility saved the client time and resources. Rapid prototyping and real-user feedback were critical to creating impactful solutions. Delivering assets that empowered the client to take ownership fostered long-term success.
+    Understanding digital competencies requires both quantitative data and qualitative insights. The project highlighted the importance of considering diverse perspectives when mapping digital literacy across a population.
   </div>
 </div>
 <figure class="project-image">

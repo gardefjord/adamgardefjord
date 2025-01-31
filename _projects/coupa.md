@@ -1,40 +1,64 @@
 ---
 layout: project-detail
-title: Redesigning sourcing sevice
+title: Redesigning Enterprise Procurement
+company: Coupa
 image: /assets/images/coupa/coupa.png
-hero_image: /assets/images/coupa/coupa.png
-date: 2018-12-01
+hero_image: /assets/images/coupa/coupa-hero.png
+date: 2016-01-01
 description: >
-  Redesigned the Coupa Sourcing Optimization (CSO) platform to enhance usability, improve navigation, and modernize the design, making it more intuitive and impactful for users worldwide.
+  Led the redesign of Coupa's strategic sourcing platform, improving usability
+  and integrating acquired products into a cohesive system.
 permalink: /projects/coupa/
 ---
 
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    The Coupa Sourcing Optimization (CSO) platform, while powerful, faced challenges with usability and navigation. Many users struggled to find what they needed, understand the structure, and use the platform efficiently. The system needed to balance retaining its flexibility while becoming more intuitive and accessible to a broader user base.
+    After acquiring TradeExtensions, Coupa needed to integrate complex sourcing functionality while maintaining usability for enterprise procurement teams.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We started by conducting extensive user research, including interviews, usability testing, and workshops, to uncover key pain points and opportunities. Collaborative ideation sessions with the development team in Uppsala and sourcing experts worldwide helped us define solutions. Through over 40 design sprints and iterations of wireframes and prototypes, we refined navigation, simplified workflows, and modernized the design system to align with Coupa's branding guidelines. Regular user feedback ensured that improvements resonated with their needs.
+    We conducted extensive user research with procurement professionals to understand their workflows and pain points. Through iterative design and testing, we simplified complex sourcing processes while building a comprehensive design system to ensure consistency across the platform. Regular user testing sessions validated our solutions and informed refinements.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The redesigned platform introduced a logical hierarchy, intuitive navigation, and grouped related functions, making it easier for users to find and understand features. Improvements included a clear visual identity, a documented design system for future scalability, and increased user satisfaction. These enhancements positioned CSO as a more user-friendly and efficient tool, driving adoption and reducing complexity for clients.
+    The redesigned platform successfully merged TradeExtensions' powerful sourcing capabilities with Coupa's user-friendly interface. The new design system enabled faster development and consistent experiences across products, while improved navigation and workflows increased user efficiency.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Prioritizing user needs through iterative testing proved invaluable in aligning functionality with real-world workflows. Collaborative design sprints with diverse teams helped uncover innovative solutions. Documenting the design system ensured the work could scale and evolve seamlessly, fostering long-term usability improvements.
+    Enterprise software can be both powerful and intuitive when designed with user needs at the forefront. Regular user testing and a systematic approach to design helped us manage complexity while improving usability.
   </div>
 </div>
 <figure class="project-image">
-  <img src="/assets/images/coupa/navigation-before-after.png" alt="Comparison of old and new navigation systems in Coupa, showcasing improved hierarchy and usability.">
-  <figcaption>Redesigned navigation structure, simplifying workflows and making features more discoverable.</figcaption>
+  <img src="/assets/images/coupa/card-sorting-coupa.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
+  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
 </figure>
 <figure class="project-image">
-  <img src="/assets/images/coupa/design-system.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
+  <img src="/assets/images/coupa/coupa_ws.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
   <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
-</figure
+</figure>
+<figure class="project-image">
+  <img src="/assets/images/coupa/sketching.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
+  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
+</figure>
+<figure class="project-image">
+  <img src="/assets/images/coupa/tradeex_theme.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
+  <figcaption>An early version of the new search functionality, here in the new TradeExtension brand.</figcaption>
+</figure>
+<figure class="project-image">
+  <img src="/assets/images/coupa/usertest.png" alt="Comparison of old and new navigation systems in Coupa, showcasing improved hierarchy and usability.">
+  <figcaption>Online usertest where the user is sharing their screen. Based on the scenario that the new version of TradeExtension was launched.</figcaption>
+</figure>
+<figure class="project-image">
+  <img src="/assets/images/coupa/navigation.png" alt="Comparison of old and new navigation systems in Coupa, showcasing improved hierarchy and usability.">
+  <figcaption>Coupa Bought TradeEx and we adapted their colors. Here's the redesigned navigation structure with simplifyed workflows to make features more discoverable.</figcaption>
+</figure>
+<figure class="project-image">
+  <img src="/assets/images/coupa/designsystem.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
+  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
+</figure>
+
+

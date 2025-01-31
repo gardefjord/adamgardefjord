@@ -1,6 +1,7 @@
 ---
 layout: project-detail
 title: Celgene Patient Insights
+company: Celgene
 image: /assets/images/celgene/celgene.png
 hero_image: /assets/images/celgene/celgene-hero.png
 date: 2015-01-01

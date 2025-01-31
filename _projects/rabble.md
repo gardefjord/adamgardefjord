@@ -1,6 +1,7 @@
 ---
 layout: projects
 title: Rabble
+company: Rabble
 image: /assets/images/rabble-logo.png
 date: 2013-01-01
 description: "A project mapping the digital competencies of Swedes and providing key insights into digital literacy across various demographics."
