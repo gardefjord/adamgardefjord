@@ -1,6 +1,6 @@
 ---
 layout: project-detail
-title: DRAFT Familial hypercholesterolemia?
+title: Familial hypercholesterolemia?
 company: Sanofi
 image: /assets/images/fh-testet-sanofi/fh-testet.png
 hero_image: /assets/images/fh-testet-sanofi/sanofi-hero.jpg

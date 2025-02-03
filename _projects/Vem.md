@@ -2,7 +2,7 @@
 layout: project-detail
 title: Vem? – Stina Wirsén
 company: Bonnier Carlsén
-image: /assets/images/vem/vem.png
+image: /assets/images/vem/vem-video-protfolio-format.gif
 hero_image: /assets/images/vem/vem-hero.png
 date: 2013-01-01
 description: >
@@ -19,7 +19,7 @@ permalink: /projects/vem-stina-wirsen/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We worked closely with Stina to adapt her books into an interactive format. The process involved recording narration, adapting illustrations for digital display, and creating simple, intuitive navigation that young children could handle. We focused on preserving the books' charm while adding thoughtful digital interactions.
+    I worked closely with Stina to adapt her books into an interactive format. The process involved recording narration, adapting illustrations for digital display, and creating simple, intuitive navigation that young children could handle. I focused on preserving the books' charm while adding thoughtful digital interactions.
   </div>
 
   <div class="grid-headline">Outcomes</div>

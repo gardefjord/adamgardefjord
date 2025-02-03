@@ -1,29 +1,30 @@
 ---
 layout: project-detail
-title: DRAFT ÖppnaDörren
+title: Opening Doors in Swedish Society
 company: Axfoundation
 image: /assets/images/oppnadorren/oppnadorren.gif
-hero_image: /assets/images/oppnadorren/oppna-dorren-ipad.jpg
+hero_image: /assets/images/oppnadorren/oppna-dorren-laptop.png
 date: 2013-12-01
 description: >
-  Developed a website for ÖppnaDörren to connect people from different backgrounds, fostering integration and meaningful personal connections in Swedish society.
+  Designed and built the launch platform for Axfoundation's ÖppnaDörren initiative,
+  connecting newcomers with established Swedes to foster integration.
 permalink: /projects/oppnadorren/
 ---
 
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    <a href="https://www.oppnadorren.se/">ÖppnaDörren</a> needed a platform to unite several organizations under a shared mission: opening doors to Swedish society for newcomers. The site had to combine a strong, clear message with functionality to connect users to partner organizations based on their needs and interests, while appealing to a broad audience.
+    Axfoundation was launching ÖppnaDörren, an initiative to unite several integration programs under one umbrella. They needed a platform that would effectively communicate their mission and connect users to the right program based on their situation and interests.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    Working alongside ÖppnaDörren and their campaign partner Forsman & Bodenfors, we designed and built a site that combined storytelling with intuitive functionality. Despite tight timelines and multiple stakeholders, we delivered a platform that guided users to relevant resources while launching seamlessly with the campaign film.
+    Working alongside Axfoundation and their campaign partner Forsman & Bodenfors, we designed and built a site that combined storytelling with intuitive functionality. Despite tight timelines and multiple stakeholders, we delivered a platform that guided users to relevant resources while launching seamlessly with the campaign film.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The site effectively communicated ÖppnaDörren’s mission and facilitated thousands of meaningful connections. It remains a valuable tool for promoting integration in Sweden, demonstrating the impact of thoughtful design and strong collaboration.
+    The launch platform effectively introduced ÖppnaDörren to the public and facilitated thousands of meaningful connections. It successfully united different integration programs under one brand while making it easy for users to find the right program for their needs. I'm immensely proud to have been part of an initiative that continues to make a real difference in fostering integration in Swedish society.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
@@ -36,7 +37,7 @@ permalink: /projects/oppnadorren/
     <source src="/assets/images/oppnadorren/ÖppnaDörren.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
-  <figcaption>The video that was produced by advertising agency Forsman & Bodenfors for the launch of the project.</figcaption>
+  <figcaption>The video that was produced by advertising agency Forsman & Bodenfors and integrated into the site for the launch.</figcaption>
 </figure>
 <figure class="project-image">
   <img src="/assets/images/oppnadorren/oppnadorren-m-about-2.jpg" alt="Diagram of the user flow for ÖppnaDörren, showing the process from registration to connection.">

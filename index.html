@@ -6,7 +6,7 @@ title: Home
 <div class="portfolio-grid">
   {% assign sorted_projects = site.projects | sort: "date" | reverse %}
   {% for project in sorted_projects %}
-    <div class="portfolio-item">
+    <div class="portfolio-item {% if project.company == 'Elsa Science' %}span-two-rows{% endif %}">
       <a href="{{ project.url | relative_url }}">
         <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
         <h4>{{ project.company }}</h4>

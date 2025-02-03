@@ -1,10 +1,10 @@
 ---
 layout: project-detail
 title: Simplifying Social Services
-company: SOC Sollentuna
-image: /assets/images/kollen/kollen.png
+company: Socialtjänsten Sollentuna
+image: /assets/images/kollen/kollen.gif
 hero_image: /assets/images/kollen/kollen-hero.png
-date: 2014-01-01
+date: 2013-11-01
 description: >
   Created the "Kollen" prototype to enhance clarity and user-friendliness 
   in social services interactions.

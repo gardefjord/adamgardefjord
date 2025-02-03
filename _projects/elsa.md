@@ -2,7 +2,7 @@
 layout: project-detail
 title: Designing for Chronic Disease Management
 company: Elsa Science
-image: /assets/images/elsa/elsa.png
+image: /assets/images/elsa/elsa-high.png
 hero_video: /assets/videos/elsa/elsa-hero-video.m4v
 date: 2017-01-01
 description: >
