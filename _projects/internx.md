@@ -2,7 +2,7 @@
 layout: project-detail
 title: Connecting Students to Opportunities
 company: uLabs Ventures
-image: /assets/images/internx/internX_main_page_bg.ong
+image: /assets/images/internx/internx.png
 hero_image: /assets/images/internx/internx-hero.png
 date: 2013-01-01
 description: >
@@ -32,3 +32,7 @@ permalink: /projects/internx/
     Rapid prototyping and testing under pressure can lead to innovative solutions when balanced with solid user research. The project demonstrated how to maintain user-centered design principles even in fast-paced development environments.
   </div>
 </div>
+<figure class="project-image">
+  <img src="/assets/images/internx/hero-2.png" alt="Screenshot of the final desktop design for internx matching plattform">
+  <figcaption>Final desktop design.</figcaption>
+</figure>

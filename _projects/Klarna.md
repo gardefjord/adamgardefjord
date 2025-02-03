@@ -3,7 +3,7 @@ layout: project-detail
 title: Reimagining Klarna's Blog Platform
 company: Klarna
 image: /assets/images/klarna/klarna.png
-hero_image: /assets/images/klarna/klarna-hero.png
+hero_image: /assets/images/klarna/hero.png
 date: 2011-01-01
 description: >
   Designed and developed a new blog platform for Klarna to strengthen their 
