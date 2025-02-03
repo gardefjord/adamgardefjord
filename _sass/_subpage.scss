@@ -12,4 +12,15 @@
   img {
     max-width: 100%;
   }
+
+  @include media-query($handheld) {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-info{
+      text-align: center;
+    }
+  }
 }
