@@ -3,7 +3,7 @@ layout: project-detail
 title: Redesigning Enterprise Procurement
 company: Coupa
 image: /assets/images/coupa/coupa.png
-hero_image: /assets/images/coupa/coupa-hero.png
+hero_video: /assets/videos/coupa/hero-video.m4v
 date: 2016-01-01
 description: >
   Led the redesign of Coupa's strategic sourcing platform, improving usability
@@ -14,24 +14,25 @@ permalink: /projects/coupa/
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    After acquiring TradeExtensions, Coupa needed to integrate complex sourcing functionality while maintaining usability for enterprise procurement teams.
+    TradeExtensions had a powerful but outdated tool with poor usability, requiring expert knowledge and a long onboarding period. The challenge was to modernize the platform while preserving its complexity for experienced users.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We conducted extensive user research with procurement professionals to understand their workflows and pain points. Through iterative design and testing, we simplified complex sourcing processes while building a comprehensive design system to ensure consistency across the platform. Regular user testing sessions validated our solutions and informed refinements.
+    We conducted in-depth user research, including card sorting workshops with customers, to identify key pain points. Through iterative design sprints, we restructured navigation and improved usability while maintaining the system’s depth. A parallel track focused on developing a new, streamlined version of the platform.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The redesigned platform successfully merged TradeExtensions' powerful sourcing capabilities with Coupa's user-friendly interface. The new design system enabled faster development and consistent experiences across products, while improved navigation and workflows increased user efficiency.
+    The redesigned platform improved navigation and onboarding without sacrificing functionality. Shortly after, TradeExtensions was acquired by Coupa for $45 million, and we supported the rebranding and integration into Coupa’s ecosystem.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Enterprise software can be both powerful and intuitive when designed with user needs at the forefront. Regular user testing and a systematic approach to design helped us manage complexity while improving usability.
+    Balancing complexity with usability is key in enterprise software. Structured research and iterative design ensured improvements were both impactful and widely adopted.
   </div>
 </div>
+
 <figure class="project-image">
   <img src="/assets/images/coupa/card-sorting-coupa.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
   <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>

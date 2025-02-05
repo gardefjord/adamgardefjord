@@ -13,12 +13,12 @@ permalink: /projects/celgene-patient-journey/
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Navigating the healthcare journey can be overwhelming and unclear for many patients. This project aimed to map the patient experience, pinpoint critical pain points, and uncover insights that could guide future improvements.
+    Navigating the healthcare journey can be overwhelming and unclear for many patients living with MS (Multiple sclerosis). This project aimed to map the patient experience, pinpoint critical pain points, and uncover insights that could guide future improvements. 
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    To build a comprehensive understanding, we conducted interviews with patients and healthcare providers, identifying key emotional, logistical, and systemic challenges. These insights were visualized in a detailed journey map created in Figma. The map highlighted moments of friction and opportunities for better support, serving as a tool for the client to deepen their understanding of the patient journey.
+    To build a comprehensive understanding, we conducted contextual interviews with patients and healthcare providers. After analysis the insights were visualized and mapped on a detailed journey map. The map highlighted moments of friction and opportunities for better support, serving as a tool for the client to deepen their understanding.
   </div>
 
   <div class="grid-headline">Outcomes</div>
@@ -28,7 +28,7 @@ permalink: /projects/celgene-patient-journey/
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    This project highlighted the importance of using design as a way to generate insights and understanding. By focusing on the patient’s perspective, we were able to create a resource that not only shed light on their challenges but also helped Celgene empathize and strategize effectively.
+    This project underscored the power of design as a tool for generating deep insights and understanding. By centering the patient’s perspective, we created a resource that not only illuminated their challenges but also enabled Celgene to empathize and strategize more effectively. I still remember their surprise at how much detail we uncovered in such a short time. 
   </div>
 </div>
 <figure class="project-image">

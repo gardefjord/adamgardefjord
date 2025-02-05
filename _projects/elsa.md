@@ -3,7 +3,7 @@ layout: project-detail
 title: Designing for Chronic Disease Management
 company: Elsa Science
 image: /assets/images/elsa/elsa-high.png
-hero_video: /assets/videos/elsa/elsa-hero-video.m4v
+hero_image: /assets/images/elsa/elsa-journey.png
 date: 2017-01-01
 description: >
   Led the design of multiple key features for Elsa Science's chronic disease management platform,
@@ -14,41 +14,31 @@ permalink: /projects/elsa/
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Patients with chronic conditions face multiple challenges: tracking complex medication regimens, identifying symptom patterns, establishing baselines, and maintaining sustainable routines. With healthcare provider visits being infrequent, it was nearly impossible for patients to accurately remember and share how they'd been doing since their last appointment. The existing tools were fragmented and difficult to use, making it harder for patients to manage their condition effectively and communicate their experiences to their healthcare providers.
+    Managing chronic conditions is complex—patients struggle to track symptoms, medications, and routines, making healthcare visits less effective. Existing tools were fragmented and unintuitive, limiting engagement and real-world impact.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    <p>We tackled this complex challenge through several interconnected initiatives:</p>
-    <ul class="project-list">
-      <li>Simplified the navigation system to improve access to key features</li>
-      <li>Created an intuitive weekly summary view for tracking health patterns</li>
-      <li>Redesigned medication management for better tracking and adherence</li>
-      <li>Developed comprehensive history views for long-term insights</li>
-      <li>Built a baseline tracking system for Crohn's Disease patients</li>
-      <li>Created a "New Normal" program to help establish sustainable routines</li>
-    </ul>
-    <p>Each initiative involved extensive user research, iterative design, and testing with patients and healthcare providers.</p>
+    We worked in rapid sprints, launching updates every three weeks—uncommon in healthcare. UX had to fit this pace, ensuring continuous feedback loops through user testing. We introduced new tools, monitored adoption, and iterated based on real-world patient needs.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    <p>The redesigned platform significantly improved patient engagement and health tracking capabilities:</p>
+    Frequent iterations led to tangible improvements in engagement and usability:
     <ul class="project-list">
-      <li>Simplified navigation increased regular app usage</li>
-      <li>Weekly summaries enabled better pattern recognition</li>
-      <li>Improved medication tracking led to better adherence</li>
-      <li>History views facilitated more informed healthcare discussions</li>
-      <li>Baseline tracking helped patients understand their condition progression</li>
-      <li>The New Normal program helped establish sustainable routines</li>
+      <li>70-85% retention in the self-care app, showing strong user adoption.</li>
+      <li>Simplified health tracking improved patient confidence and decision-making.</li>
+      <li>Clinical Dashboard enabled earlier interventions, reducing unnecessary visits by 34%.</li>
+      <li>Self-Screening Tool, tested on 40,000 users, improved clarity in diagnosis journeys.</li>
     </ul>
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Complex healthcare challenges require a holistic approach. While each feature serves a specific purpose, their true value comes from how they work together to support patients' overall health management journey. Regular user testing and close collaboration with healthcare providers were crucial to creating tools that truly serve patient needs.
+    Delivering impact required a relentless focus on incremental progress—scoping and identifying opportunities in parallel to ensure maximum value in each release. The key was knowing when to build the car instead of training a faster horse—balancing rapid execution with bold innovation.
   </div>
 </div>
+
 
 <!-- <figure class="project-image">
   <img src="/assets/images/elsa/hero.png" alt="Simplified navigation system">
@@ -56,8 +46,16 @@ permalink: /projects/elsa/
 </figure> -->
 
 <figure class="project-image">
-  <img src="/assets/images/elsa/hero-1.png" alt="Patient mobile app interface">
+  <img src="/assets/images/elsa/hero-1.png" alt="Patient mobile app interfaces">
   <figcaption>Patient mobile app featuring an engaging home screen with daily tasks, a symptom tracking, and a simplified weekly report that makes health changes easy to understand.</figcaption>
+</figure>
+
+<figure class="project-video">
+  <video autoplay playsinline muted loop>
+    <source src="/assets/videos/elsa/elsa-hero-video.m4v" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+  <figcaption>Patiant mobile app in action. Here we see how a user logs their day.</figcaption>
 </figure>
 
 <figure class="project-image">

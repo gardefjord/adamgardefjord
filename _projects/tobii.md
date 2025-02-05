@@ -2,33 +2,33 @@
 layout: project-detail
 title: Simplifying Remote Eye Tracking
 company: Tobii
-image: /assets/images/tobii-gazeshare/tobii.png
+image: /assets/images/tobii-gazeshare/tobii-light.png
 hero_image: /assets/images/tobii-gazeshare/tobii-hero.png
-date: 2015-01-01
+date: 2015-01-03
 description: >
-  Designed GazeShare, a service that makes remote eye tracking studies 
-  accessible and efficient for UX researchers and participants.
+  Led design sprints to map and reimagine the remote eye tracking experience,
+  resulting in GazeShare—a service that simplifies research for both researchers and participants.
 permalink: /projects/tobii/
 ---
 
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Remote eye tracking studies are complex to set up and manage, requiring significant technical expertise. Researchers need a way to conduct studies efficiently while ensuring participants can easily join and participate, regardless of their technical background.
+    Remote eye tracking studies were complex to set up and manage, requiring significant technical expertise. Tobii needed to understand the complete user journey and identify opportunities to make their technology more accessible to researchers while ensuring ease of participation for study subjects.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    Through extensive journey mapping and user research, we identified key moments in the eye tracking study process - from initial setup to recording and analysis. We focused on simplifying critical workflows like equipment calibration, participant onboarding, and session recording while ensuring researchers maintain control over their studies.
+    We structured the initial exploration as two focused design sprints, each including four collaborative workshops with Tobii's product team. Using customer journey mapping as our framework, we gained a shared understanding of the complete eye tracking study process. These insights then guided our prototyping and testing phase, where we worked closely with the Tobii team to transform opportunities into concrete solutions.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    GazeShare streamlined the remote eye tracking process with features like simplified calibration, intuitive room management, and integrated recording capabilities. The service makes it easy for researchers to conduct studies while providing clear guidance for participants joining sessions.
+    The sprint-based approach led to clear insights that shaped GazeShare's development. The resulting service streamlined critical workflows like equipment calibration, participant onboarding, and session recording. What began as exploratory design sprints evolved into a full product that makes remote eye tracking studies more accessible while maintaining the technical rigor researchers require.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Complex technical processes can be made accessible through careful attention to user workflows and clear step-by-step guidance. Supporting both expert researchers and first-time participants requires finding the right balance between simplicity and control.
+    Starting with focused design sprints helped build a strong foundation of user understanding before moving into solution development. The collaborative approach with Tobii's team ensured we maintained the right balance between simplifying complex processes and preserving necessary technical sophistication.
   </div>
 </div>
