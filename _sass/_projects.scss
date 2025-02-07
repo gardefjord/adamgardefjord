@@ -142,13 +142,14 @@ figcaption {
     padding-left: $spacing-unit/3;
     
     &:before {
-      content: "•";
+      content: "";
       position: absolute;
       left: 0;
-      top: 3px;
-      color: $brand-color;
-      font-size: 1.2em;
-      line-height: 1;
+      top: 0.7em;
+      width: 7px;
+      height: 3px;
+      background-color: $brand-color;
+      transform: translateY(-50%);
     }
   }
 

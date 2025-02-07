@@ -4,7 +4,7 @@ title: Designing for Chronic Disease Management
 company: Elsa Science
 image: /assets/images/elsa/elsa-high.png
 hero_image: /assets/images/elsa/elsa-journey.png
-date: 2017-01-01
+date: 2020-01-01
 description: >
   Led the design of multiple key features for Elsa Science's chronic disease management platform,
   improving patient experience and health tracking capabilities.
