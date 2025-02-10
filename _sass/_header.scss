@@ -15,6 +15,14 @@
   .main-header-left {
     flex: 1; /* Pushes this to the far left */
     text-align: left;
+    display: flex;
+    align-items: center;
+    gap: calc(#{$spacing-unit} / 4);
+
+    #theme-toggle {
+      padding: 0;
+      margin: 0;
+    }
 
     .brand-name {
       font-family: $font-header;
@@ -81,5 +89,44 @@
   }
   .main-header .nav-list a.active {
     text-decoration: underline;
+  }
+}
+
+.theme-toggle {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  position: relative;
+  
+  svg {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.2s ease-in-out;
+    color: $text-color;
+  }
+}
+
+.theme-toggle-dark-icon {
+  opacity: 1;
+}
+
+.theme-toggle-light-icon {
+  opacity: 0;
+  color: white;
+}
+
+[data-theme="dark"] {
+  .theme-toggle-dark-icon {
+    opacity: 0;
+  }
+  
+  .theme-toggle-light-icon {
+    opacity: 1;
   }
 }

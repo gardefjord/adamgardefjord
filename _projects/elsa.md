@@ -35,7 +35,11 @@ permalink: /projects/elsa/
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Delivering impact required a relentless focus on incremental progress—scoping and identifying opportunities in parallel to ensure maximum value in each release. The key was knowing when to build the car instead of training a faster horse—balancing rapid execution with bold innovation.
+    <p>Being fully embedded in a product team for the first time taught me how product decisions shape teams, strategy, and user impact. I saw firsthand how product-market fit evolves and how empowered teams drive better outcomes.</p>
+
+    <p>Working in B2B2C healthcare, I learned to design for multiple stakeholders—building tools for users who would, in turn, create experiences for their own users. Each feature had to be valuable at different levels.</p>
+
+    <p>I also saw that startups go through phases, each requiring different skills. Sometimes big changes were needed, not just small improvements. The key was staying flexible, experimenting, and adapting quickly.</p>
   </div>
 </div>
 
@@ -51,7 +55,7 @@ permalink: /projects/elsa/
 </figure>
 
 <figure class="project-video">
-  <video autoplay playsinline muted loop>
+  <video autoplay playsinline muted loop controls>
     <source src="/assets/videos/elsa/elsa-hero-video.m4v" type="video/mp4">
     Your browser does not support the video tag.
   </video>

@@ -21,11 +21,18 @@ $font-size-body-small: $small-font-size;
 
 $spacing-unit: 40px;
 
-$text-color: #000000;
-$background-color: #ffffff;
-$brand-color: #000000;
+$text-color: var(--text-color);
+$background-color: var(--background-color);
+$brand-color: var(--brand-color);
 $grey-color: #828282;
-$link-color: #0700d2;
+
+// Link colors for light mode
+$link-color: rgb(0, 0, 238);
+$link-visited-color: rgb(85, 26, 139);
+
+// Link colors for dark mode - lighter versions
+$link-color-dark: rgb(102, 178, 255);        // Lighter blue
+$link-visited-color-dark: rgb(187, 122, 255); // Lighter purple
 
 $handheld: 400px;
 $on-laptop: 800px;
@@ -90,8 +97,42 @@ p {
 
 // Links
 a {
-  text-decoration: none;
-  transition: color 0.3s, border-color 0.3s;
+  color: var(--link-color);
+  text-decoration: underline;
+  
+  &:visited {
+    color: var(--link-visited-color);
+  }
+  
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+// Exception for header navigation links
+.main-header {
+  .nav-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    
+    &:visited {
+      color: var(--text-color);
+    }
+    
+    &:hover {
+      color: var(--brand-color);
+    }
+  }
+}
+
+// Exception for brand name
+.brand-name {
+  color: var(--brand-color) !important;
+  text-decoration: none !important;
+  
+  &:visited {
+    color: var(--brand-color) !important;
+  }
 }
 
 // Media query mixin
@@ -111,4 +152,20 @@ a {
   // @include media-query($handheld) {
   //   padding: $spacing-unit; /* Add more padding on smaller screens for readability */
   // }
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --brand-color: #000000;
+  --link-color: #{$link-color};
+  --link-visited-color: #{$link-visited-color};
+  
+  &[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --brand-color: #ffffff;
+    --link-color: #{$link-color-dark};
+    --link-visited-color: #{$link-visited-color-dark};
+  }
 }

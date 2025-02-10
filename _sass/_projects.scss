@@ -19,6 +19,14 @@
     font-weight: $font-weight-normal;
     line-height: $base-line-height;
     color: $text-color;
+
+    p {
+      margin-bottom: calc(#{$spacing-unit} / 2);
+      
+      &:last-child {
+        margin-bottom: 0; // Remove margin from last paragraph to avoid extra space
+      }
+    }
   }
 
   a {
