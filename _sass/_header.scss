@@ -67,23 +67,39 @@
 }
 
 /* Responsive Styles for Smaller Screens */
-@include media-query($handheld) {
+@include media-query($on-laptop) {
   .main-header {
-    flex-direction: column; /* Stack brand and menu vertically on small screens */
-    align-items: center; /* Center items */
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: $spacing-unit;
+    padding: calc(#{$spacing-unit}) calc(#{$spacing-unit} / 2);
 
     .main-header-left {
+      flex-direction: column;
       text-align: center;
+      gap: $spacing-unit;
+      margin-bottom: calc(#{$spacing-unit} / 4);
+
+      .brand-name {
+        margin-bottom: 0;
+        order: 2;
+      }
+
+      #theme-toggle {
+        margin: 0 auto;
+        order: 1;
+      }
     }
+
     .main-header-right {
-      margin-top: $spacing-unit;
+      width: 100%;
+      text-align: center;
 
       .nav-list {
-        flex-direction: column; /* Stack menu items vertically */
+        flex-direction: row;
         align-items: center;
-        gap: calc(#{$spacing-unit} / 4);
+        justify-content: center;
+        gap: calc(#{$spacing-unit} / 2);
       }
     }
   }
@@ -100,6 +116,7 @@
   width: 24px;
   height: 24px;
   position: relative;
+  top: -1px;
   
   svg {
     width: 24px;

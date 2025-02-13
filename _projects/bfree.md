@@ -29,7 +29,7 @@ permalink: /projects/bfree/
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Early technical feasibility discussions and rapid prototyping with user feedback were key to creating an impactful solution that the client could build upon.
+    Building a product from scratch isn’t just about great UX or UI—it’s about delivering real value. Iterative development is key, but so is guiding stakeholders in the right direction, ensuring the team, client, and management stay focused on what truly matters.
   </div>
 </div>
 

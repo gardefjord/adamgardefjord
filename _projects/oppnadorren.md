@@ -14,22 +14,22 @@ permalink: /projects/oppnadorren/
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Axfoundation was launching ÖppnaDörren, an initiative to unite several integration programs under one umbrella. They needed a platform that would effectively communicate their mission and connect users to the right program based on their situation and interests.
+    <a href="https://www.oppnadorren.se" target="_blank">ÖppnaDörren</a> was launching as an Axfoundation initiative, uniting several integration programs under one brand. They needed a platform that clearly communicated their mission and seamlessly connected users to the right program based on their situation.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    Working alongside Axfoundation and their campaign partner Forsman & Bodenfors, we designed and built a site that combined storytelling with intuitive functionality. Despite tight timelines and multiple stakeholders, we delivered a platform that guided users to relevant resources while launching seamlessly with the campaign film.
+    Collaborating with Axfoundation and <a href="https://www.fb.se" target="_blank">Forsman & Bodenfors</a>, we designed and built a site that blended storytelling with intuitive navigation. With tight timelines and multiple stakeholders, we ensured the platform launched smoothly alongside the campaign film while guiding users to relevant resources.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The launch platform effectively introduced ÖppnaDörren to the public and facilitated thousands of meaningful connections. It successfully united different integration programs under one brand while making it easy for users to find the right program for their needs. I'm immensely proud to have been part of an initiative that continues to make a real difference in fostering integration in Swedish society.
+    The platform introduced ÖppnaDörren to the public and facilitated thousands of meaningful connections. It successfully unified different integration programs under one umbrella while making it easy for users to engage. A testament to our work: the site still looks and functions much like it did at launch in 2015, proving the strength of its design and usability.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Coordinating multiple stakeholders and aligning campaign assets require clear priorities and communication. Designing for broad audiences reinforced the value of simplicity, accessibility, and collaboration.
+    Coordinating multiple stakeholders while aligning with a campaign requires clear priorities and sharp communication. Designing for a broad audience reinforced the power of simplicity, accessibility, and collaboration in making meaningful connections happen.
   </div>
 </div>
 <figure class="project-video">

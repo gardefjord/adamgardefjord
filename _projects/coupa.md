@@ -1,9 +1,9 @@
 ---
 layout: project-detail
 title: Redesigning Enterprise Procurement
-company: Coupa
-image: /assets/images/coupa/coupa.png
-hero_video: /assets/videos/coupa/hero-video.m4v
+company: Coupa & TradeExtensions
+image: /assets/images/coupa/tradeextensions.png
+hero_video: /assets/videos/coupa/hero-video-coupa.m4v
 date: 2016-01-01
 description: >
   Led the redesign of Coupa's strategic sourcing platform, improving usability
@@ -19,17 +19,17 @@ permalink: /projects/coupa/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We conducted in-depth user research, including card sorting workshops with customers, to identify key pain points. Through iterative design sprints, we restructured navigation and improved usability while maintaining the system’s depth. A parallel track focused on developing a new, streamlined version of the platform.
+    We started with card sorting workshops to identify key issues, then ran 40+ design sprints to iteratively introduce features, refine workflows, and streamline onboarding. A design system ensured consistency and scalability as the platform evolved.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The redesigned platform improved navigation and onboarding without sacrificing functionality. Shortly after, TradeExtensions was acquired by Coupa for $45 million, and we supported the rebranding and integration into Coupa’s ecosystem.
+    The transformation made the platform accessible to a broader audience. New features lowered the barrier for entry, helping less experienced users get value faster. The structured design system enabled scalable improvements without compromising complexity. The impact was clear: shortly after, TradeExtensions was acquired by Coupa for $45 million, and we supported its integration.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Balancing complexity with usability is key in enterprise software. Structured research and iterative design ensured improvements were both impactful and widely adopted.
+    Redesigning large systems works best in small, focused iterations—never in one massive overhaul. Improving usability not only enhances the experience for existing users but also opens doors to entirely new markets.
   </div>
 </div>
 

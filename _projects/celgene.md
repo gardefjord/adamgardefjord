@@ -1,34 +1,35 @@
 ---
 layout: project-detail
-title: Celgene Patient Insights
+title: Mapping the MS Patient Journey
 company: Celgene
 image: /assets/images/celgene/celgene.png
 hero_image: /assets/images/celgene/celgene-hero.png
-date: 2015-01-01
+date: 2014-01-01
 description: >
-  Uncovering insights to enhance healthcare navigation and empower patient-centered care.
-permalink: /projects/celgene-patient-journey/
+  Created a comprehensive patient journey map for multiple sclerosis (MS),
+  helping Celgene better understand and support patient needs.
+permalink: /projects/celgene/
 ---
 
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Navigating the healthcare journey can be overwhelming and unclear for many patients living with MS (Multiple sclerosis). This project aimed to map the patient experience, pinpoint critical pain points, and uncover insights that could guide future improvements. 
+    Navigating healthcare is often overwhelming for MS patients. Our goal was to map their experience, identify pain points, and uncover insights to improve support.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    To build a comprehensive understanding, we conducted contextual interviews with patients and healthcare providers. After analysis the insights were visualized and mapped on a detailed journey map. The map highlighted moments of friction and opportunities for better support, serving as a tool for the client to deepen their understanding.
+    We conducted contextual interviews with patients and healthcare providers to capture real experiences. Insights were visualized in a detailed journey map, highlighting friction points and opportunities for better support.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The journey map provided Celgene with valuable insights and a clear picture of the patient journey, fostering a greater understanding among healthcare providers of patient needs and challenges. While the project didn’t lead directly to further work exploring how digital tools might ease the patient journey—a step we often take—it equipped Celgene with a strong foundation for future initiatives. The client was impressed by how much we accomplished using our methods and praised the map for its depth and clarity. 
-    </div>
+    The journey map gave Celgene a clearer understanding of patient needs, helping healthcare providers see key challenges. While it didn't immediately lead to digital solutions, it laid a strong foundation for future initiatives. The client praised the depth of insight we achieved.
+  </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    This project underscored the power of design as a tool for generating deep insights and understanding. By centering the patient’s perspective, we created a resource that not only illuminated their challenges but also enabled Celgene to empathize and strategize more effectively. I still remember their surprise at how much detail we uncovered in such a short time. 
+    Design is a powerful tool for revealing hidden challenges. By centering the patient's perspective, we created a resource that fostered empathy and strategic direction—and showed how much deep insights can be uncovered in a short time.
   </div>
 </div>
 <figure class="project-image">

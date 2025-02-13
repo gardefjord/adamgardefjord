@@ -13,22 +13,22 @@ permalink: /projects/fh-testet/
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Familial hypercholesterolemia (FH) is a genetic condition that leads to dangerously high cholesterol levels. Most people don’t know they have it until they experience something as severe as a heart attack. Worse, even general practitioners often miss the signs due to limited awareness or competing priorities. Our task was to design a solution that would make people stop and take notice—without overwhelming or scaring them—and support early detection and ongoing treatment.
+    Familial hypercholesterolemia (FH) is often undiagnosed until a major health event. At first, we didn't know what problem to solve—our goal was to find the key barriers to early detection and treatment.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We started by diving into the patient experience: what does it feel like to go from a vague concern about cholesterol to a life-altering diagnosis? Mapping the journey was eye-opening. There’s a gap not just in knowledge, but in emotional support—patients often feel confused, alone, and uncertain about what to do next. Using these insights, we designed a tool that made taking the first step as easy as answering a few questions. It wasn’t just about the test; it was about making people feel seen, understood, and in control.
+    Through workshops with patients and healthcare professionals, we discovered a major gap: awareness and emotional support. Many didn't recognize their risk, and diagnosed patients felt lost. We designed a self-assessment tool that made the first step clear, simple, and reassuring.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The FH-testet became more than just a diagnostic tool; it was a conversation starter. By combining a self-assessment with clear, empathetic explanations, it empowered users to take action. The results spoke for themselves: within two months of launch, the test attracted 13,000 unique visitors, with 2,300 completed assessments and 100 individuals referring themselves to specialist care. The project also highlighted the potential for digital tools to complement traditional care, showing how they can bridge gaps in time, resources, and understanding.
+    The FH-testet sparked action. In two months, 13,000 people visited, 2,300 completed the test, and 100 sought specialist care. The project proved digital tools can drive real healthcare impact.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Working on this project reinforced the value of starting with empathy. By focusing on what patients think and feel during critical moments, we could design a solution that truly fit into their lives. I also learned the importance of balancing innovation with practicality—sometimes the simplest ideas have the most impact, as long as they meet a real need.
+    Taking time to find the real problem is key. Smaller, focused interventions often make the biggest difference—especially when they turn complex issues into something actionable.
   </div>
 </div>
 <figure class="project-image">
