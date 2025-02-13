@@ -1,0 +1,26 @@
+@use "base" as *;
+ 
+/* Subpage Content, i.e. About and Contact */
+.subpage-content {
+  max-width: 600px;
+  
+  .project-subtitle {
+    padding-left: 6px;
+    border-left: 3px solid $brand-color;
+  }
+
+  img {
+    max-width: 100%;
+  }
+
+  @include media-query($handheld) {
+    img {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    .contact-info{
+      text-align: center;
+    }
+  }
+}

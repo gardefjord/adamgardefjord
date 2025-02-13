@@ -1,25 +1,52 @@
-*---
+---
 layout: default
 ---
 
-<div class="home">
+<div class="project-detail-container">
+  <article class="project-detail">
 
-  {{ content }}
-  
-  {% for post in site.tags.project %}
-    <div class="post">
-      
-        <h2 class="post-headline">
-            {{ post.title | escape }}
-        </h2>
-        <p class="post-description">{{ post.description }}<br /><span class="post-dates">[{{ post.when_it_happened }}]</span></p>
-        <div class="post-read-more">
-          <a class="post-link" href="{{ post.url | relative_url }}">Read more</a> 
-        </div>
-      
-    </div>
-    {% endfor %}
+    <!-- Project Title and Date -->
+    <header class="project-header">
+      <h1 class="project-title">{{ page.title }}</h1>
+      <p class="project-date">{{ page.date | date: "%B %d, %Y" }}</p>
+    </header>
 
-  
-  
+    <!-- Description -->
+    <section class="project-intro">
+      <p class="project-description">{{ page.description }}</p>
+    </section>
+
+    <!-- Featured Image -->
+    {% if page.image %}
+      <figure class="project-image-container">
+        <img class="project-detail-image" src="{{ page.image | relative_url }}" alt="{{ page.title | escape }}">
+        <figcaption>Image showcasing the project: {{ page.title }}</figcaption>
+      </figure>
+    {% endif %}
+
+    <!-- Details Section -->
+    {% if page.details %}
+      <section class="project-section">
+        <h2 class="project-subtitle">Details</h2>
+        <p class="project-text">{{ page.details }}</p>
+      </section>
+    {% endif %}
+
+    <!-- Challenges Section -->
+    {% if page.challenges %}
+      <section class="project-section">
+        <h2 class="project-subtitle">Challenges</h2>
+        <p class="project-text">{{ page.challenges }}</p>
+      </section>
+    {% endif %}
+
+    <!-- Outcomes Section -->
+    {% if page.outcomes %}
+      <section class="project-section">
+        <h2 class="project-subtitle">Outcomes</h2>
+        <p class="project-text">{{ page.outcomes }}</p>
+      </section>
+    {% endif %}
+
+  </article>
 </div>

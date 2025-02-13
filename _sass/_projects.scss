@@ -1,0 +1,229 @@
+@use "base" as *;
+
+.project-grid {
+  display: grid;
+  grid-template-columns: 1fr 3fr; /* Narrow first column for headlines, wider second column for content */
+  gap: $spacing-unit; /* Adjust spacing between rows */
+
+  .grid-headline {
+    font-family: $font-header;
+    font-size: $font-size-h4;
+    color: $brand-color;
+    text-align: left; /* Align text to the right */
+    padding-right: calc(#{$spacing-unit} / 2); /* Adds spacing between the headline and content */
+  }
+
+  .grid-content {
+    font-family: $font-body;
+    font-size: $font-size-body-regular;
+    font-weight: $font-weight-normal;
+    line-height: $base-line-height;
+    color: $text-color;
+
+    p {
+      margin-bottom: calc(#{$spacing-unit} / 2);
+      
+      &:last-child {
+        margin-bottom: 0; // Remove margin from last paragraph to avoid extra space
+      }
+    }
+  }
+
+  a {
+    color: $link-color;
+
+  }
+
+  @include media-query($on-laptop) {
+    grid-template-columns: 1fr 2fr; /* Adjust proportions for smaller screens */
+  }
+
+  @include media-query($handheld) {
+    grid-template-columns: 1fr; /* Stack items in a single column on very small screens */
+    row-gap: 0; /* Adjust spacing between rows */
+    column-gap: $spacing-unit; /* Adjust spacing between rows */
+
+    .grid-headline {
+      text-align: left; /* Align headlines to the left on small screens */
+      padding-right: 0; /* Remove padding */
+      margin-bottom: calc(#{$spacing-unit} / 8); /* Add spacing below headline */
+    }
+    .grid-content {
+      margin-bottom: $spacing-unit; /* Add spacing below headline */
+    }
+  }
+}
+
+.project-detail {
+  max-width: $max-width;
+  margin: 0 auto;
+
+  /* Hero Section */
+  .project-hero {
+    margin-bottom: $spacing-unit * 2;
+
+    .hero-video,
+    .hero-image {
+      width: 100%;
+      margin-bottom: $spacing-unit;
+      
+      video,
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+    }
+
+    .project-hero-content {
+      max-width: 700px;
+      color: $text-color;  // Using the base text color
+      
+      h1 {
+        margin-bottom: calc(#{$spacing-unit} / 2);
+      }
+      
+      .project-description {
+        padding-left: 6px;
+        border-left: 3px solid $brand-color;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .project-hero {
+      height: 50vh;
+    }
+  }
+
+  /* Project Content */
+  .project-content {
+    max-width: 700px;
+    
+    .project-subtitle {
+      padding-left: 6px;
+      border-left: 3px solid $brand-color;
+    }
+
+  }
+
+}
+.project-image {
+  text-align: left;
+  margin: $spacing-unit*2 auto; /* Centered with spacing */
+  max-width: $max-width;
+
+  img {
+    width: 100%;
+    height: auto;
+    margin-top: calc(#{$spacing-unit} / 4); /* Space between image and caption */
+
+  }
+
+}
+
+.project-video {
+  text-align: left;
+  margin: $spacing-unit*2 auto; /* Centered with spacing */
+  max-width: $max-width;
+
+  video {
+    width: 100%;
+    height: auto;
+    margin-top: calc(#{$spacing-unit} / 4); /* Space between image and caption */
+  }
+}
+
+figcaption {
+  font-family: $font-body;
+  font-size: $font-size-body-small;
+}
+
+.project-list {
+  margin: $spacing-unit/4 0;
+  padding-left: $spacing-unit/6;
+  list-style: none;
+
+  li {
+    position: relative;
+    margin-bottom: calc(#{$spacing-unit} / 4);
+    padding-left: $spacing-unit/3;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 0.7em;
+      width: 7px;
+      height: 3px;
+      background-color: $brand-color;
+      transform: translateY(-50%);
+    }
+  }
+
+}
+
+.portfolio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-unit;
+  
+  .portfolio-item {
+    h3 {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      margin: 0;
+      padding: 0;
+    }
+    
+    &.span-two-rows {
+      grid-row: span 2;
+      height: 100%;
+      
+      a {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        
+        img {
+          flex: 1;
+          height: 100%;
+          object-fit: cover;
+          object-position: center;
+        }
+        
+        h4, h3 {
+          flex-shrink: 0;
+        }
+        h4 {
+          padding-top: $spacing-unit/5;
+        }
+      }
+    }
+  }
+}
+
+.contact-info {
+  margin: $spacing-unit 0;
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: $spacing-unit/2 0;
+    
+    li {
+      margin-bottom: $spacing-unit/4;
+      
+      a {
+        color: $text-color;
+        text-decoration: none;
+        border-bottom: 1px solid $brand-color;
+        
+        &:hover {
+          color: $brand-color;
+        }
+      }
+    }
+  }
+}

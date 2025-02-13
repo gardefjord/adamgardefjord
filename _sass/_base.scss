@@ -1,183 +1,171 @@
-/**
- * Reset some basic elements
- */
+@use "sass:color";
+
+// Variables
+$font-header: 'Electrolize', sans-serif;
+$font-body: 'Times New Roman', serif;
+$font-weight-normal: 400;
+$font-weight-bold: 700;
+
+$base-font-size: 16px;
+$small-font-size: 14px;
+$base-line-height: 1.5;
+
+$font-size-display: 36px;
+$font-size-h1: 32px;
+$font-size-h2: 26px;
+$font-size-h3: 20px;
+$font-size-h4: 16px;
+$font-size-body-large: 18px;
+$font-size-body-regular: $base-font-size;
+$font-size-body-small: $small-font-size;
+
+$spacing-unit: 40px;
+
+$text-color: var(--text-color);
+$background-color: var(--background-color);
+$brand-color: var(--brand-color);
+$grey-color: #828282;
+
+// Link colors for light mode
+$link-color: rgb(0, 0, 238);
+$link-visited-color: rgb(85, 26, 139);
+
+// Link colors for dark mode - lighter versions
+$link-color-dark: rgb(102, 178, 255);        // Lighter blue
+$link-visited-color-dark: rgb(187, 122, 255); // Lighter purple
+
+$handheld: 400px;
+$on-laptop: 800px;
+$max-width: 1240px;
+
+// Reset styles
 body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
   padding: 0;
 }
-@charset "utf-8";
 
-// Define defaults for each variable.
-
-$base-font-family: Trebuchet, Arial, Roboto, Helvetica, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !default;
-$base-font-size:   20px !default;
-$base-font-weight: 700 !default;
-$small-font-size:  $base-font-size * 0.875 !default;
-$base-line-height: 1.5 !default;
-
-$spacing-unit:     40px !default;
-
-$text-color:       #000275 !default;
-$background-color: #ffb8b8 !default;
-$brand-color:      #00014E !default;
-
-$grey-color:       #828282 !default;
-$grey-color-light: lighten($grey-color, 40%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
-
-$table-text-align: left !default;
-
-// Width of the content area
-$content-width:    900px !default;
-
-$handheld:         400px !default;
-$on-laptop:        800px !default;
-
-
-/**
- * Basic styling
- */
+// Typography
 body {
-  font: $base-font-weight #{$base-font-size}/#{$base-line-height} $base-font-family;
+  font-family: $font-body;
+  font-size: $base-font-size;
+  font-weight: $font-weight-normal;
+  line-height: $base-line-height;
   color: $text-color;
   background-color: $background-color;
-  -webkit-text-size-adjust: 100%;
-  -webkit-font-feature-settings: "kern" 1;
-     -moz-font-feature-settings: "kern" 1;
-       -o-font-feature-settings: "kern" 1;
-          font-feature-settings: "kern" 1;
-  font-kerning: normal;
   display: flex;
-  min-height: 100vh;
   flex-direction: column;
-  
-  @include media-query($handheld) {
-      font-size: 1em;
-  }
+  min-height: 100vh;
 }
 
-/**
- * Set `margin-bottom` to maintain vertical rhythm
- */
-h1, h2, h3, h4, h5, h6,
-p, blockquote, pre,
-ul, ol, dl, figure,
-%vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
-}
-
-/**
- * `main` element
- */
-main {
-  display: block; /* Default value of `display` of `main` element is 'inline' in IE 11. */
-}
-
-/**
- * Lists
- */
-ul, ol {
-  margin-left: $spacing-unit;
-}
-
-li {
-  > ul,
-  > ol {
-    margin-bottom: 0;
-  }
-}
-
-/**
- * Headings
- */
 h1 {
-  line-height: 1.1em;
-  font-size: 3em;
-}
-h1, h4, h5, h6 {
-  font-weight: $base-font-weight;
-}
-h2, h3 {
-  font-weight: 300;
+  font-family: $font-header;
+  font-size: $font-size-h1;
+  font-weight: $font-weight-bold;
+  color: $brand-color;
 }
 
-/**
- * Links
- */
-a {
+h2 {
+  font-family: $font-header;
+  font-size: $font-size-h2;
+  font-weight: $font-weight-bold;
   color: $text-color;
-  border-bottom: 2px solid rgba($text-color, 0.1);
-  text-decoration: none;
-  transition: 0.5s;
-  padding-bottom: 1px;
+}
 
-  &:hover {
-    color: $text-color;
-    border-bottom: 2px solid;
+h3 {
+  font-family: $font-header;
+  font-size: $font-size-h3;
+  font-weight: $font-weight-normal;
+  color: $text-color;
+}
+
+h4 {
+  font-family: $font-body;
+  font-size: $font-size-h4;
+  font-weight: $font-weight-normal;
+  color: $text-color;
+}
+
+p {
+  font-family: $font-body;
+  font-size: $font-size-body-regular;
+  font-weight: $font-weight-normal;
+  line-height: $base-line-height;
+}
+
+
+// Links
+a {
+  color: var(--link-color);
+  text-decoration: underline;
+  
+  &:visited {
+    color: var(--link-visited-color);
   }
-
-  .social-media-list &:hover {
+  
+  &:hover {
     text-decoration: none;
+  }
+}
 
-    .username {
-      text-decoration: underline;
+// Exception for header navigation links
+.main-header {
+  .nav-list a {
+    color: var(--text-color);
+    text-decoration: none;
+    
+    &:visited {
+      color: var(--text-color);
+    }
+    
+    &:hover {
+      color: var(--brand-color);
     }
   }
 }
 
-
-
-/**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit} * 2));
-  max-width:         calc(#{$content-width} - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(#{$content-width} - (#{$spacing-unit}));
-    max-width:         calc(#{$content-width} - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
+// Exception for brand name
+.brand-name {
+  color: var(--brand-color) !important;
+  text-decoration: none !important;
+  
+  &:visited {
+    color: var(--brand-color) !important;
   }
 }
 
-
-
-/**
- * Clearfix
- */
-%clearfix:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-
-
-/**
- * Icons
- */
-
-.svg-icon {
-    width: 16px;
-    height: 16px;
-    display: inline-block;
-    fill: #{$grey-color};
-    padding-right: 5px;
-    vertical-align: text-top;
-}
-
-.social-media-list {
-  li + li {
-    padding-top: 5px;
+// Media query mixin
+@mixin media-query($breakpoint) {
+  @media (max-width: #{$breakpoint}) {
+    @content;
   }
 }
 
+.page-content {
+  max-width: $max-width;
+  margin: 0 auto; /* Centers the content */
+  padding: 0 calc(#{$spacing-unit} / 2) $spacing-unit*8 calc(#{$spacing-unit} / 2); /* Adjust padding for consistent spacing */
+  box-sizing: border-box; /* Includes padding in width calculation */
+  width: 100%; /* Ensures content doesn't exceed the viewport width */
+
+  // @include media-query($handheld) {
+  //   padding: $spacing-unit; /* Add more padding on smaller screens for readability */
+  // }
+}
+
+:root {
+  --background-color: #ffffff;
+  --text-color: #333333;
+  --brand-color: #000000;
+  --link-color: #{$link-color};
+  --link-visited-color: #{$link-visited-color};
+  
+  &[data-theme="dark"] {
+    --background-color: #1a1a1a;
+    --text-color: #ffffff;
+    --brand-color: #ffffff;
+    --link-color: #{$link-color-dark};
+    --link-visited-color: #{$link-visited-color-dark};
+  }
+}
