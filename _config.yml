@@ -34,6 +34,7 @@ plugins:
   - jekyll-feed
   - jekyll-seo-tag
 sass:
+  style: compressed
   sass_dir: _sass
 # Exclude from processing.
 # The following items will not be processed, by default.
