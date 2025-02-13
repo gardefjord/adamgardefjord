@@ -140,14 +140,14 @@ figcaption {
 }
 
 .project-list {
-  margin: $spacing-unit/4 0;
-  padding-left: $spacing-unit/6;
+  margin: calc(#{$spacing-unit} / 4) 0;
+  padding-left: calc(#{$spacing-unit} / 6);
   list-style: none;
 
   li {
     position: relative;
     margin-bottom: calc(#{$spacing-unit} / 4);
-    padding-left: $spacing-unit/3;
+    padding-left: calc(#{$spacing-unit} / 3);
     
     &:before {
       content: "";
@@ -163,57 +163,16 @@ figcaption {
 
 }
 
-.portfolio-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-  gap: $spacing-unit;
-  
-  .portfolio-item {
-    h3 {
-      white-space: nowrap;
-      overflow: hidden;
-      text-overflow: ellipsis;
-      margin: 0;
-      padding: 0;
-    }
-    
-    &.span-two-rows {
-      grid-row: span 2;
-      height: 100%;
-      
-      a {
-        display: flex;
-        flex-direction: column;
-        height: 100%;
-        
-        img {
-          flex: 1;
-          height: 100%;
-          object-fit: cover;
-          object-position: center;
-        }
-        
-        h4, h3 {
-          flex-shrink: 0;
-        }
-        h4 {
-          padding-top: $spacing-unit/5;
-        }
-      }
-    }
-  }
-}
-
 .contact-info {
   margin: $spacing-unit 0;
   
   ul {
     list-style: none;
     padding: 0;
-    margin: $spacing-unit/2 0;
+    margin: calc(#{$spacing-unit} / 2) 0;
     
     li {
-      margin-bottom: $spacing-unit/4;
+      margin-bottom: calc(#{$spacing-unit} / 4);
       
       a {
         color: $text-color;

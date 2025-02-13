@@ -1,8 +1,8 @@
 ---
 ---
 
-@import "base";
-@import "header";
-@import "projects";
-@import "subpage";
-// ... other imports 
+@use "base";
+@use "header";
+@use "projects";
+@use "subpage";
+@use "home";

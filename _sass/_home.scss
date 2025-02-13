@@ -2,54 +2,66 @@
 
 .portfolio-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: $spacing-unit*2;
-  margin: 0 auto;
-  max-width: $max-width;
-
-  @include media-query(1200px) { 
-    gap: $spacing-unit * 1.5; /* Smaller gap for medium-large screens */
-  }
-
-  @include media-query($on-laptop) {
-    grid-template-columns: repeat(2, 1fr);
-    gap: $spacing-unit; /* Reduce gap for laptop screens */
-  }
-
-  @include media-query(600px) {
-    grid-template-columns: 1fr;
-    row-gap: calc(#{$spacing-unit}); /* Larger distance between rows */
-    column-gap: calc(#{$spacing-unit} / 2); /* Smaller distance between columns */
-  }
-
-  @include media-query($handheld) {
-    row-gap: calc(#{$spacing-unit}); /* Minimal gap for very small screens */
-  }
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: $spacing-unit;
 }
 
 .portfolio-item {
-  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
 
   a {
     text-decoration: none;
+    width: 100%;
     display: block;
-    border: none;
   }
 
   img {
     width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures the image looks good in a grid */
-
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
   }
 
   h3 {
-    color: $text-color; /* Inherits from global styles */
-    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    padding: 0;
   }
+
   h4 {
-    color: $text-color; /* Inherits from global styles */
+    color: $text-color;
     text-align: left;
+    margin-top: calc(#{$spacing-unit} / 8);
+    font-size: $font-size-h4;
+  }
+
+  &.span-two-rows {
+    grid-row: span 2;
+    height: 100%;
+    
+    a {
+      display: flex;
+      flex-direction: column;
+      height: 100%;
+      
+      img {
+        flex: 1;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+      
+      h4, h3 {
+        flex-shrink: 0;
+      }
+      h4 {
+        padding-top: $spacing-unit/5;
+      }
+    }
   }
 }
