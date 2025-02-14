@@ -22,7 +22,7 @@ title: Adam Gardefjord
 email: adam.gardefjord@gmail.com
 description: Interaction and UX Designer with over 10 years working on digital products. 
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://adamgardefjord.se" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: gardefjord
 github_username:  gardefjord
 permalink: none
@@ -58,5 +58,3 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
-url: "https://adamgardefjord.se"  # Add your actual URL
-baseurl: ""
