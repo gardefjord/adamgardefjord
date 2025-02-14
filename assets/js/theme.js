@@ -11,6 +11,12 @@ const getPreferredTheme = () => {
 const setTheme = (theme) => {
   document.documentElement.setAttribute('data-theme', theme);
   localStorage.setItem('theme', theme);
+  
+  // Update theme-color meta tag
+  const metaThemeColor = document.getElementById('theme-color');
+  if (metaThemeColor) {
+    metaThemeColor.setAttribute('content', theme === 'dark' ? '#1a1a1a' : '#ffffff');
+  }
 };
 
 // Initialize theme
