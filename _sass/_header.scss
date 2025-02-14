@@ -1,4 +1,4 @@
-@use "base";
+@import "base";
 
 .main-header {
   display: flex;
@@ -6,10 +6,10 @@
   justify-content: space-between;
   align-items: center;
   width: 100%; /* Ensure the header spans the full width */
-  max-width: base.$max-width;
+  max-width: $max-width;
   margin: 0 auto;
-  padding: calc(#{base.$spacing-unit}*2) calc(#{base.$spacing-unit} / 2);
-  background-color: base.$background-color;
+  padding: calc(#{$spacing-unit}*2) calc(#{$spacing-unit} / 2);
+  background-color: $background-color;
   box-sizing: border-box; /* Ensure padding is included in width */
 
   .main-header-left {
@@ -17,7 +17,7 @@
     text-align: left;
     display: flex;
     align-items: center;
-    gap: calc(#{base.$spacing-unit} / 4);
+    gap: calc(#{$spacing-unit} / 4);
 
     #theme-toggle {
       padding: 0;
@@ -25,10 +25,10 @@
     }
 
     .brand-name {
-      font-family: base.$font-header;
-      font-size: base.$font-size-h2;
-      font-weight: base.$font-weight-bold;
-      color: base.$brand-color;
+      font-family: $font-header;
+      font-size: $font-size-h2;
+      font-weight: $font-weight-bold;
+      color: $brand-color;
       text-decoration: none;
     }
   }
@@ -41,21 +41,21 @@
       list-style: none;
       display: flex;
       justify-content: flex-end; /* Aligns the menu items to the right */
-      gap: calc(#{base.$spacing-unit} / 2); /* Adds spacing between menu items */
+      gap: calc(#{$spacing-unit} / 2); /* Adds spacing between menu items */
       margin: 0;
       padding: 0;
 
       li {
         a {
-          font-family: base.$font-header;
-          font-size: base.$font-size-h2;
-          font-weight: base.$font-weight-normal;
-          color: base.$text-color;
+          font-family: $font-header;
+          font-size: $font-size-h2;
+          font-weight: $font-weight-normal;
+          color: $text-color;
           text-decoration: none;
           transition: color 0.3s;
 
           &:hover {
-            color: base.$brand-color;
+            color: $brand-color;
           }
           &.active {
             text-decoration: underline; /* Optional for emphasis */
@@ -67,18 +67,18 @@
 }
 
 /* Responsive Styles for Smaller Screens */
-@include base.media-query(base.$on-laptop) {
+@media screen and (max-width: $on-laptop) {
   .main-header {
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: calc(#{base.$spacing-unit}) calc(#{base.$spacing-unit} / 2);
+    padding: calc(#{$spacing-unit}) calc(#{$spacing-unit} / 2);
 
     .main-header-left {
       flex-direction: column;
       text-align: center;
-      gap: base.$spacing-unit;
-      margin-bottom: calc(#{base.$spacing-unit} / 4);
+      gap: $spacing-unit;
+      margin-bottom: calc(#{$spacing-unit} / 4);
 
       .brand-name {
         margin-bottom: 0;
@@ -99,7 +99,7 @@
         flex-direction: row;
         align-items: center;
         justify-content: center;
-        gap: calc(#{base.$spacing-unit} / 2);
+        gap: calc(#{$spacing-unit} / 2);
       }
     }
   }
@@ -125,7 +125,7 @@
     top: 0;
     left: 0;
     transition: opacity 0.2s ease-in-out;
-    color: base.$text-color;
+    color: $text-color;
   }
 }
 
