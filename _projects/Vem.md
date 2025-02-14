@@ -32,13 +32,3 @@ permalink: /projects/vem-stina-wirsen/
     Success in digital publishing comes from respecting the original work while finding the right business model. Simple, thoughtful interactions often work better than complex features, especially for young users.
   </div>
 </div>
-
-<figure class="project-image">
-  <img src="/assets/images/vem/process.png" alt="Design process and collaboration with Stina Wirsén">
-  <figcaption>Working with Stina to adapt her distinctive illustrations for the digital format.</figcaption>
-</figure>
-
-<figure class="project-image">
-  <img src="/assets/images/vem/final.png" alt="Final digital adaptation">
-  <figcaption>The final app combined Stina's original artwork with simple interactive elements and professional narration.</figcaption>
-</figure>

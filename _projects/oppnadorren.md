@@ -34,7 +34,7 @@ permalink: /projects/oppnadorren/
 </div>
 <figure class="project-video">
   <video controls playsinline>
-    <source src="/assets/images/oppnadorren/ÖppnaDörren.mp4" type="video/mp4">
+    <source src="/assets/images/oppnadorren/oppnadorren.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
   <figcaption>The video that was produced by advertising agency Forsman & Bodenfors and integrated into the site for the launch.</figcaption>
