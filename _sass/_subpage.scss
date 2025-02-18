@@ -12,15 +12,11 @@
   img {
     max-width: 100%;
   }
-
-  @include media-query($handheld) {
-    img {
-      display: block;
-      margin-left: auto;
-      margin-right: auto;
-    }
-    .contact-info{
-      text-align: center;
-    }
+  .profile-image {
+      width: 100px;  // Set a fixed width
+      height: 100px; // Same as width to maintain perfect circle
+      border-radius: 50%;  // Makes the image circular
+      object-fit: cover;   // Ensures the image fills the circle without distortion
+      display: block;      // Centers the image
   }
 }

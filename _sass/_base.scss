@@ -15,7 +15,7 @@ $small-font-size: 14px;
 $base-line-height: 1.5;
 
 $font-size-display: 36px;
-$font-size-h1: 32px;
+$font-size-h1: 36px;
 $font-size-h2: 26px;
 $font-size-h3: 20px;
 $font-size-h4: 16px;
@@ -72,6 +72,7 @@ h1 {
   font-size: $font-size-h1;
   font-weight: $font-weight-bold;
   color: $brand-color;
+  line-height: 1.2;
 }
 
 h2 {

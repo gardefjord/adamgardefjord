@@ -8,6 +8,7 @@
   .grid-headline {
     font-family: $font-header;
     font-size: $font-size-h4;
+    font-weight: $font-weight-bold;
     color: $brand-color;
     text-align: left; /* Align text to the right */
     padding-right: calc(#{$spacing-unit} / 2); /* Adds spacing between the headline and content */
@@ -184,12 +185,16 @@ figcaption {
 
 .floating-menu {
     position: fixed;
-    bottom: 2rem;
+    bottom: $spacing-unit*1.5;
     left: 0;
     right: 0;
     z-index: 1000;
     display: flex;
     justify-content: center;
+
+    @include media-query($on-laptop) {
+      bottom: calc(#{$spacing-unit} / 4);
+    }
     
     .menu-wrapper {
         background: var(--background-color);
