@@ -19,7 +19,7 @@ permalink: /projects/bfree/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    Through research and collaborative workshops, we identified core user needs and streamlined workflows. We designed and tested interactive wireframes with users, then developed a cohesive visual language that supported the concept's approachable identity.
+    Through research and collaborative workshops, I identified core user needs and streamlined workflows. I designed and tested interactive wireframes with users, then developed a cohesive visual language that supported the concept's approachable identity.
   </div>
 
   <div class="grid-headline">Outcomes</div>

@@ -14,22 +14,22 @@ permalink: /projects/celgene/
 <div class="project-grid">
   <div class="grid-headline">Problem</div>
   <div class="grid-content">
-    Navigating healthcare is often overwhelming for MS patients. Our goal was to map their experience, identify pain points, and uncover insights to improve support.
+    Navigating healthcare is often overwhelming for MS patients. My goal was to map their experience, identify pain points, and uncover insights to improve support.
   </div>
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We conducted contextual interviews with patients and healthcare providers to capture real experiences. Insights were visualized in a detailed journey map, highlighting friction points and opportunities for better support.
+    I conducted contextual interviews with patients and healthcare providers to capture real experiences. Insights were visualized in a detailed journey map, highlighting friction points and opportunities for better support.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The journey map gave Celgene a clearer understanding of patient needs, helping healthcare providers see key challenges. While it didn't immediately lead to digital solutions, it laid a strong foundation for future initiatives. The client praised the depth of insight we achieved.
+    The journey map gave Celgene a clearer understanding of patient needs, helping healthcare providers see key challenges. While it didn't immediately lead to digital solutions, it laid a strong foundation for future initiatives. The client praised the depth of insight that was achieved.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
-    Design is a powerful tool for revealing hidden challenges. By centering the patient's perspective, we created a resource that fostered empathy and strategic direction—and showed how much deep insights can be uncovered in a short time.
+    Design is a powerful tool for revealing hidden challenges. By centering the patient's perspective, I created a resource that fostered empathy and strategic direction—and showed how much deep insights can be uncovered in a short time.
   </div>
 </div>
 <figure class="project-image">

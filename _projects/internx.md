@@ -19,7 +19,7 @@ permalink: /projects/internx/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    Through extensive user research with both students and employers, we identified key pain points in the internship search process. The project culminated in an intensive three-week sprint in San Diego, where we rapidly prototyped and tested solutions with real users.
+    Through extensive user research with both students and employers, I identified key pain points in the internship search process. The project culminated in an intensive three-week sprint in San Diego, where I rapidly prototyped and tested solutions with real users.
   </div>
 
   <div class="grid-headline">Outcomes</div>
