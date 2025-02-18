@@ -19,7 +19,7 @@ permalink: /projects/digikomm/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We conducted interviews across diverse groups to explore digital skills, attitudes, and barriers. Visualizing these insights provided a structured view of Sweden’s digital landscape.
+    I conducted interviews across diverse groups to explore digital skills, attitudes, and barriers. Visualizing these insights provided a structured view of Sweden’s digital landscape.
   </div>
 
   <div class="grid-headline">Outcomes</div>

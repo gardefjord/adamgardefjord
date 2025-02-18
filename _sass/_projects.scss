@@ -181,3 +181,158 @@ figcaption {
     }
   }
 }
+
+.floating-menu {
+    position: fixed;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: center;
+    
+    .menu-wrapper {
+        background: var(--background-color);
+        background: rgba(var(--background-rgb), 0.8);
+        padding: 1rem 2rem;
+        border-radius: 50px;
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        display: flex;
+        gap: 2rem;
+        backdrop-filter: blur(20px);
+        -webkit-backdrop-filter: blur(20px);
+        
+        .logo-link {
+            display: flex;
+            align-items: center;
+            color: var(--text-color);
+            
+            svg {
+                width: 24px;
+                height: auto;
+            }
+            
+            &:hover {
+                color: var(--brand-color);
+            }
+            
+            &.active {
+                color: var(--text-color);
+            }
+        }
+        
+        a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-family: $font-header;
+            font-size: $font-size-body-regular;
+            position: relative;
+            
+            &:hover {
+                opacity: 0.8;
+            }
+            
+            &.active {
+                &:after {
+                    content: '';
+                    position: absolute;
+                    bottom: -4px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: currentColor;
+                }
+            }
+        }
+
+        .theme-toggle {
+            display: flex;
+            align-items: center;
+            height: 24px; // Match the height of the SVG icons
+            margin-left: 0.5rem; // Add a little spacing between Contact and the toggle
+            
+            svg {
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}
+
+// Move these theme toggle styles inside .floating-menu .menu-wrapper
+.theme-toggle {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: var(--text-color);
+    
+    .theme-toggle-light-icon,
+    .theme-toggle-dark-icon {
+        display: none;
+    }
+}
+
+[data-theme="light"] .theme-toggle .theme-toggle-dark-icon,
+[data-theme="dark"] .theme-toggle .theme-toggle-light-icon {
+    display: block;
+}
+
+// Add some padding to the bottom of the page to prevent content from being hidden behind the floating menu
+body {
+    padding-bottom: 6rem;
+}
+
+.intro-section {
+    max-width: $max-width;
+    margin: 0 auto $spacing-unit;
+    padding: $spacing-unit 0;
+    
+    .intro-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $spacing-unit;
+        
+        .intro-content {
+            grid-column: span 2;
+            
+            svg {
+                width: 48px;
+                height: auto;
+                margin-bottom: $spacing-unit;
+                color: var(--brand-color);
+            }
+            
+            .intro-title {
+                font-size: $font-size-display;
+                font-weight: $font-weight-bold;
+                line-height: 1.2;
+                margin-bottom: $spacing-unit;
+                color: var(--brand-color);
+                
+                em {
+                    font-style: normal;
+                    color: var(--text-color);
+                }
+            }
+            
+            .project-subtitle {
+                font-size: $font-size-h3;
+                font-weight: $font-weight-normal;
+                line-height: 1.5;
+                margin-bottom: calc(#{$spacing-unit} / 4);
+                
+                strong {
+                    font-weight: $font-weight-bold;
+                    color: var(--brand-color);
+                }
+            }
+        }
+        
+        @media (max-width: $on-laptop) {
+            .intro-content {
+                grid-column: span 3;
+            }
+        }
+    }
+}

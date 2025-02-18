@@ -19,7 +19,7 @@ permalink: /projects/elsa/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We worked in rapid sprints, launching updates every three weeks—uncommon in healthcare. UX had to fit this pace, ensuring continuous feedback loops through user testing. We introduced new tools, monitored adoption, and iterated based on real-world patient needs.
+    I worked in rapid sprints, launching updates every three weeks—uncommon in healthcare. UX had to fit this pace, ensuring continuous feedback loops through user testing. I introduced new tools, monitored adoption, and iterated based on real-world patient needs.
   </div>
 
   <div class="grid-headline">Outcomes</div>
@@ -36,9 +36,7 @@ permalink: /projects/elsa/
   <div class="grid-headline">Lessons Learned</div>
   <div class="grid-content">
     <p>Being fully embedded in a product team for the first time taught me how product decisions shape teams, strategy, and user impact. I saw firsthand how product-market fit evolves and how empowered teams drive better outcomes.</p>
-
     <p>Working in B2B2C healthcare, I learned to design for multiple stakeholders—building tools for users who would, in turn, create experiences for their own users. Each feature had to be valuable at different levels.</p>
-
     <p>I also saw that startups go through phases, each requiring different skills. Sometimes big changes were needed, not just small improvements. The key was staying flexible, experimenting, and adapting quickly.</p>
   </div>
 </div>

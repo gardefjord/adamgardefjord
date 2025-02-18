@@ -19,12 +19,12 @@ permalink: /projects/coupa/
   
   <div class="grid-headline">Approach</div>
   <div class="grid-content">
-    We started with card sorting workshops to identify key issues, then ran 40+ design sprints to iteratively introduce features, refine workflows, and streamline onboarding. A design system ensured consistency and scalability as the platform evolved.
+  Leading Trade Extensions’ in-house design team, I worked with Electrolux, IKEA, Volvo, Johnson & Johnson, and Kimberly-Clark. Through card sorting workshops, we mapped key system areas, then ran 40+ design sprints to redesign them—adding new features, refining workflows, and ensuring scalability with a structured design system.
   </div>
 
   <div class="grid-headline">Outcomes</div>
   <div class="grid-content">
-    The transformation made the platform accessible to a broader audience. New features lowered the barrier for entry, helping less experienced users get value faster. The structured design system enabled scalable improvements without compromising complexity. The impact was clear: shortly after, TradeExtensions was acquired by Coupa for $45 million, and we supported its integration.
+    The transformation made the platform accessible to a broader audience. New features lowered the barrier for entry, helping less experienced users get value faster. The structured design system enabled scalable improvements without compromising complexity. The impact was clear: shortly after, TradeExtensions was acquired by Coupa for $45 million, and I supported its integration.
   </div>
 
   <div class="grid-headline">Lessons Learned</div>

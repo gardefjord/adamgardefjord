@@ -1,9 +1,13 @@
 @use "sass:color";
 
 // Variables
-$font-header: 'Electrolize', sans-serif;
-$font-body: 'Times New Roman', serif;
+$font-header: "Inter", sans-serif;
+$font-body: "Inter", sans-serif;
+
+// Font weights (Inter supports 100-900)
+$font-weight-light: 300;
 $font-weight-normal: 400;
+$font-weight-medium: 500;
 $font-weight-bold: 700;
 
 $base-font-size: 16px;
@@ -76,7 +80,7 @@ h2 {
 h3 {
   font-family: $font-header;
   font-size: $font-size-h3;
-  font-weight: $font-weight-normal;
+  font-weight: $font-weight-bold;
   color: $text-color;
 }
 
@@ -110,7 +114,7 @@ a {
 }
 
 // Exception for header navigation links
-.main-header {
+.main-menu {
   .nav-list a {
     color: var(--text-color);
     text-decoration: none;
@@ -144,7 +148,7 @@ a {
 
 .page-content {
   max-width: $max-width;
-  margin: 0 auto; /* Centers the content */
+  margin: $spacing-unit*2 auto 0 auto; /* Centers the content */
   padding: 0 calc(#{$spacing-unit} / 2) $spacing-unit*8 calc(#{$spacing-unit} / 2); /* Adjust padding for consistent spacing */
   box-sizing: border-box; /* Includes padding in width calculation */
   width: 100%; /* Ensures content doesn't exceed the viewport width */
@@ -156,6 +160,7 @@ a {
 
 :root {
   --background-color: #ffffff;
+  --background-rgb: 255, 255, 255;
   --text-color: #333333;
   --brand-color: #000000;
   --link-color: #{$link-color};
@@ -163,6 +168,7 @@ a {
   
   &[data-theme="dark"] {
     --background-color: #1a1a1a;
+    --background-rgb: 26, 26, 26;
     --text-color: #ffffff;
     --brand-color: #ffffff;
     --link-color: #{$link-color-dark};
