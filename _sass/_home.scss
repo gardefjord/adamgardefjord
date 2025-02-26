@@ -4,6 +4,9 @@
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
   gap: $spacing-unit;
+  @media (max-width: $handheld) {
+    gap: $spacing-unit*2;
+  }
 }
 
 .portfolio-item {
@@ -31,6 +34,14 @@
     text-overflow: ellipsis;
     margin: 0;
     padding: 0;
+
+    @media (max-width: $handheld) {
+      white-space: normal;
+      overflow: visible;
+      text-overflow: clip;
+      margin: 0;
+      padding: 0;
+    }
   }
 
   h4 {
@@ -58,9 +69,6 @@
       
       h4, h3 {
         flex-shrink: 0;
-      }
-      h4 {
-        padding-top: $spacing-unit/5;
       }
     }
   }
