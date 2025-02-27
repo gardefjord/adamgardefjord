@@ -58,3 +58,6 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+
+# Google Analytics
+google_analytics: G-1X1LNM8GX8  # Replace with your actual Measurement ID
