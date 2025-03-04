@@ -35,15 +35,15 @@ permalink: /projects/coupa/
 
 <figure class="project-image">
   <img src="/assets/images/coupa/card-sorting-coupa.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
-  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
+  <figcaption>Conducted card sorting workshops together with Trade Extensions clients as a base for the new information architecture and navigation.</figcaption>
 </figure>
 <figure class="project-image">
   <img src="/assets/images/coupa/coupa_ws.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
-  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
+  <figcaption>Collaboration was key in the project, here we're figuiring out parts of a story board in one of many design sprints.</figcaption>
 </figure>
 <figure class="project-image">
   <img src="/assets/images/coupa/sketching.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
-  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
+  <figcaption>Co-creating ideas together with the highly technical team at Trade Extensions.</figcaption>
 </figure>
 <figure class="project-image">
   <img src="/assets/images/coupa/tradeex_theme.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
@@ -55,11 +55,11 @@ permalink: /projects/coupa/
 </figure>
 <figure class="project-image">
   <img src="/assets/images/coupa/navigation.png" alt="Comparison of old and new navigation systems in Coupa, showcasing improved hierarchy and usability.">
-  <figcaption>Coupa Bought TradeEx and we adapted their colors. Here's the redesigned navigation structure with simplifyed workflows to make features more discoverable.</figcaption>
+  <figcaption>After Coupa had acquired Trade Extensions their branding was incorporated in the newly released platform. Here we can see the redesigned navigation structure with simplifyed hierarchy to increase discoverability.</figcaption>
 </figure>
 <figure class="project-image">
   <img src="/assets/images/coupa/designsystem.png" alt="Components of the CSO design system, including icons, typography, and color palettes.">
-  <figcaption>Design system components that ensure scalability and consistency across the platform.</figcaption>
+  <figcaption>A few components from the design system that ensure scalability and consistency across the platform.</figcaption>
 </figure>
 
 
