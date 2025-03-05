@@ -54,7 +54,7 @@ permalink: /projects/coupa/
   <figcaption>Online usertest where the user is sharing their screen. Based on the scenario that the new version of TradeExtension was launched.</figcaption>
 </figure>
 <figure class="project-image">
-  <img src="/assets/images/coupa/navigation.png" alt="Comparison of old and new navigation systems in Coupa, showcasing improved hierarchy and usability.">
+  <img src="/assets/images/coupa/navigation-coupa.png" alt="Comparison of old and new navigation systems in Coupa, showcasing improved hierarchy and usability.">
   <figcaption>After Coupa had acquired Trade Extensions their branding was incorporated in the newly released platform. Here we can see the redesigned navigation structure with simplifyed hierarchy to increase discoverability.</figcaption>
 </figure>
 <figure class="project-image">
