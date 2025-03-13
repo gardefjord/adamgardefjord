@@ -19,12 +19,10 @@
 # in the templates via {{ site.myvariable }}.
 
 title: Adam Gardefjord
-email: adam.gardefjord@gmail.com
-description: Interaction and UX Designer with over 10 years working on digital products. 
+email: gardefjord@hey.com
+description: Senior UX/UI & Product Designer | Creating Intuitive Digital Solutions That Inspire and Improve Lives 
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://adamgardefjord.se" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: gardefjord
-github_username:  gardefjord
 permalink: none
 collections:
   projects:
@@ -61,3 +59,17 @@ exclude:
 
 # Google Analytics
 google_analytics: G-1X1LNM8GX8  # Replace with your actual Measurement ID
+
+# Add these additional settings for better social media previews
+logo: /assets/images/AG-logo.svg  # Site-wide logo
+social:
+  name: Adam Gardefjord
+  links:
+    - https://linkedin.com/in/adamgardefjord
+
+# Most importantly, add this for the social preview image
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/images/social-preview.png  # Create this image if it doesn't exist
