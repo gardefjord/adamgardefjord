@@ -1,6 +1,6 @@
 ---
 layout: project-detail
-title: Mapping the MS Patient Journey
+title: Navigating Multiple Sclerosis
 company: Celgene
 image: /assets/images/celgene/celgene.png
 hero_image: /assets/images/celgene/celgene-hero.png
