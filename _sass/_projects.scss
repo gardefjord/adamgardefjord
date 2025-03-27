@@ -192,8 +192,16 @@ figcaption {
     display: flex;
     justify-content: center;
 
+    @supports (-webkit-touch-callout: none) {
+        bottom: calc(#{$spacing-unit*1.5} + env(safe-area-inset-bottom, 0));
+    }
+
     @include media-query($on-laptop) {
       bottom: calc(#{$spacing-unit} / 4);
+      
+      @supports (-webkit-touch-callout: none) {
+          bottom: calc(calc(#{$spacing-unit} / 4) + env(safe-area-inset-bottom, 0));
+      }
     }
     
     .menu-wrapper {
@@ -285,7 +293,7 @@ figcaption {
 
 // Add some padding to the bottom of the page to prevent content from being hidden behind the floating menu
 body {
-    padding-bottom: 6rem;
+    padding-bottom: max(6rem, env(safe-area-inset-bottom, 6rem));
 }
 
 .intro-section {
