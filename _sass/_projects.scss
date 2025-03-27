@@ -323,6 +323,28 @@ body {
                 margin-bottom: $spacing-unit;
                 color: var(--brand-color);
                 
+                .mobile-break {
+                    display: block; // Show break on desktop
+                    
+                    @include media-query($on-laptop) {
+                        display: none; // Hide break on mobile
+                    }
+                }
+                
+                .desktop-dash {
+                    @include media-query($on-laptop) {
+                        display: none; // Hide em dash on mobile
+                    }
+                }
+                
+                .mobile-dash {
+                    display: none; // Hide comma by default
+                    
+                    @include media-query($on-laptop) {
+                        display: inline; // Show comma on mobile
+                    }
+                }
+                
                 em {
                     font-style: normal;
                     color: var(--text-color);
